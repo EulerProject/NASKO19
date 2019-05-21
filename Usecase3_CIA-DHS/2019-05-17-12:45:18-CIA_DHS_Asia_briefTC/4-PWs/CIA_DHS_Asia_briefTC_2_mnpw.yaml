@@ -1,0 +1,42 @@
+CIA.China:
+  concept: China
+  group: CIA
+CIA.Taiwan:
+  concept: Taiwan
+  group: CIA
+DHS.China:
+  concept: China
+  group: DHS
+DHS.Taiwan:
+  concept: Taiwan
+  group: DHS
+congruent.CIA.AsiaOther\nDHS.AsiaOther:
+  concept: CIA.AsiaOther\nDHS.AsiaOther
+  group: congruent
+congruent.CIA.Asia\nDHS.Asia:
+  concept: CIA.Asia\nDHS.Asia
+  group: congruent
+CIA.AsiaOther\nDHS.AsiaOther_CIA.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: CIA.AsiaOther\nDHS.AsiaOther
+  t: CIA.Asia\nDHS.Asia
+CIA.China_DHS.Taiwan:
+  label: is_a (inferred)
+  s: CIA.China
+  t: DHS.Taiwan
+CIA.Taiwan_CIA.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: CIA.Taiwan
+  t: CIA.Asia\nDHS.Asia
+CIA.Taiwan_DHS.Taiwan:
+  label: overlaps (inferred)
+  s: CIA.Taiwan
+  t: DHS.Taiwan
+DHS.China_CIA.Taiwan:
+  label: is_a (inferred)
+  s: DHS.China
+  t: CIA.Taiwan
+DHS.Taiwan_CIA.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: DHS.Taiwan
+  t: CIA.Asia\nDHS.Asia

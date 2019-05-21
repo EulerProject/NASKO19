@@ -1,0 +1,82 @@
+'*NEW*.CIA.China * DHS.China\nCIA.China \\ DHS.Taiwan\nDHS.China \\ CIA.Taiwan':
+  concept: CIA.China * DHS.China\nCIA.China \\ DHS.Taiwan\nDHS.China \\ CIA.Taiwan
+  group: '*NEW*'
+'*NEW*.CIA.China * DHS.Taiwan\nCIA.China \\ DHS.China\nDHS.Taiwan \\ CIA.Taiwan':
+  concept: CIA.China * DHS.Taiwan\nCIA.China \\ DHS.China\nDHS.Taiwan \\ CIA.Taiwan
+  group: '*NEW*'
+'*NEW*.CIA.Taiwan * DHS.China\nCIA.Taiwan \\ DHS.Taiwan\nDHS.China \\ CIA.China':
+  concept: CIA.Taiwan * DHS.China\nCIA.Taiwan \\ DHS.Taiwan\nDHS.China \\ CIA.China
+  group: '*NEW*'
+'*NEW*.CIA.Taiwan * DHS.Taiwan\nCIA.Taiwan \\ DHS.China\nDHS.Taiwan \\ CIA.China':
+  concept: CIA.Taiwan * DHS.Taiwan\nCIA.Taiwan \\ DHS.China\nDHS.Taiwan \\ CIA.China
+  group: '*NEW*'
+CIA.China:
+  concept: China
+  group: CIA
+CIA.Taiwan:
+  concept: Taiwan
+  group: CIA
+DHS.China:
+  concept: China
+  group: DHS
+DHS.Taiwan:
+  concept: Taiwan
+  group: DHS
+congruent.CIA.AsiaOther\nDHS.AsiaOther:
+  concept: CIA.AsiaOther\nDHS.AsiaOther
+  group: congruent
+congruent.CIA.Asia\nDHS.Asia:
+  concept: CIA.Asia\nDHS.Asia
+  group: congruent
+CIA.AsiaOther\nDHS.AsiaOther_CIA.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: CIA.AsiaOther\nDHS.AsiaOther
+  t: CIA.Asia\nDHS.Asia
+CIA.China * DHS.China\nCIA.China \\ DHS.Taiwan\nDHS.China \\ CIA.Taiwan_CIA.China:
+  label: is_a (inferred)
+  s: CIA.China * DHS.China\nCIA.China \\ DHS.Taiwan\nDHS.China \\ CIA.Taiwan
+  t: CIA.China
+CIA.China * DHS.China\nCIA.China \\ DHS.Taiwan\nDHS.China \\ CIA.Taiwan_DHS.China:
+  label: is_a (inferred)
+  s: CIA.China * DHS.China\nCIA.China \\ DHS.Taiwan\nDHS.China \\ CIA.Taiwan
+  t: DHS.China
+CIA.China * DHS.Taiwan\nCIA.China \\ DHS.China\nDHS.Taiwan \\ CIA.Taiwan_CIA.China:
+  label: is_a (inferred)
+  s: CIA.China * DHS.Taiwan\nCIA.China \\ DHS.China\nDHS.Taiwan \\ CIA.Taiwan
+  t: CIA.China
+CIA.China * DHS.Taiwan\nCIA.China \\ DHS.China\nDHS.Taiwan \\ CIA.Taiwan_DHS.Taiwan:
+  label: is_a (inferred)
+  s: CIA.China * DHS.Taiwan\nCIA.China \\ DHS.China\nDHS.Taiwan \\ CIA.Taiwan
+  t: DHS.Taiwan
+CIA.China_CIA.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: CIA.China
+  t: CIA.Asia\nDHS.Asia
+CIA.Taiwan * DHS.China\nCIA.Taiwan \\ DHS.Taiwan\nDHS.China \\ CIA.China_CIA.Taiwan:
+  label: is_a (inferred)
+  s: CIA.Taiwan * DHS.China\nCIA.Taiwan \\ DHS.Taiwan\nDHS.China \\ CIA.China
+  t: CIA.Taiwan
+CIA.Taiwan * DHS.China\nCIA.Taiwan \\ DHS.Taiwan\nDHS.China \\ CIA.China_DHS.China:
+  label: is_a (inferred)
+  s: CIA.Taiwan * DHS.China\nCIA.Taiwan \\ DHS.Taiwan\nDHS.China \\ CIA.China
+  t: DHS.China
+CIA.Taiwan * DHS.Taiwan\nCIA.Taiwan \\ DHS.China\nDHS.Taiwan \\ CIA.China_CIA.Taiwan:
+  label: is_a (inferred)
+  s: CIA.Taiwan * DHS.Taiwan\nCIA.Taiwan \\ DHS.China\nDHS.Taiwan \\ CIA.China
+  t: CIA.Taiwan
+CIA.Taiwan * DHS.Taiwan\nCIA.Taiwan \\ DHS.China\nDHS.Taiwan \\ CIA.China_DHS.Taiwan:
+  label: is_a (inferred)
+  s: CIA.Taiwan * DHS.Taiwan\nCIA.Taiwan \\ DHS.China\nDHS.Taiwan \\ CIA.China
+  t: DHS.Taiwan
+CIA.Taiwan_CIA.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: CIA.Taiwan
+  t: CIA.Asia\nDHS.Asia
+DHS.China_CIA.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: DHS.China
+  t: CIA.Asia\nDHS.Asia
+DHS.Taiwan_CIA.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: DHS.Taiwan
+  t: CIA.Asia\nDHS.Asia

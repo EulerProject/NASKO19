@@ -1,0 +1,13 @@
+#Taxonomy 1 CIA https://www.cia.gov/library/publications/the-world-factbook/
+#Taxonomy 2 Homeland Secuirty https://www.dhs.gov/geographic-regions
+
+taxonomy CIA CIA
+(Asia China Taiwan AsiaOther)
+
+taxonomy DHS HomelandSecurity
+(Asia China Taiwan AsiaOther)
+
+articulation CIA-DHS CIA-Homeland
+[CIA.Asia equals DHS.Asia]
+[CIA.AsiaOther equals DHS.AsiaOther]
+

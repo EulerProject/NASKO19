@@ -1,0 +1,24 @@
+congruent.CIA.AsiaOther\nDHS.AsiaOther:
+  concept: CIA.AsiaOther\nDHS.AsiaOther
+  group: congruent
+congruent.CIA.Asia\nDHS.Asia:
+  concept: CIA.Asia\nDHS.Asia
+  group: congruent
+congruent.CIA.China\nDHS.China:
+  concept: CIA.China\nDHS.China
+  group: congruent
+congruent.CIA.Taiwan\nDHS.Taiwan:
+  concept: CIA.Taiwan\nDHS.Taiwan
+  group: congruent
+CIA.AsiaOther\nDHS.AsiaOther_CIA.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: CIA.AsiaOther\nDHS.AsiaOther
+  t: CIA.Asia\nDHS.Asia
+CIA.China\nDHS.China_CIA.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: CIA.China\nDHS.China
+  t: CIA.Asia\nDHS.Asia
+CIA.Taiwan\nDHS.Taiwan_CIA.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: CIA.Taiwan\nDHS.Taiwan
+  t: CIA.Asia\nDHS.Asia

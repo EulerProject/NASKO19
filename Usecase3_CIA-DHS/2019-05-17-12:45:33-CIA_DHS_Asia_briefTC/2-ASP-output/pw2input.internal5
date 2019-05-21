@@ -1,0 +1,2 @@
+tr = [['CIA.China*DHS.China', 'CIA.China', 1], ['CIA.China*DHS.China', 'DHS.China', 1], ['CIA.China', 'CIA.Asia\\nDHS.Asia', 0], ['DHS.China', 'CIA.Asia\\nDHS.Asia', 0], ['CIA.AsiaOther\\nDHS.AsiaOther', 'CIA.Asia\\nDHS.Asia', 0], ['CIA.Taiwan\\nDHS.China\\\\CIA.China', 'DHS.China', 1], ['DHS.Taiwan\\nCIA.China\\\\DHS.China', 'CIA.China', 1], ['CIA.Taiwan\\nDHS.China\\\\CIA.China', 'CIA.Asia\\nDHS.Asia', 2], ['DHS.Taiwan\\nCIA.China\\\\DHS.China', 'CIA.Asia\\nDHS.Asia', 2]]
+pwIndex = 5

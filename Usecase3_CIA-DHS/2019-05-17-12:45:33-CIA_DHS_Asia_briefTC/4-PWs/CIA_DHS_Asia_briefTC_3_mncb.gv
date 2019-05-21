@@ -1,0 +1,27 @@
+digraph{
+rankdir=RL
+node[shape=box style="filled,rounded" fillcolor="#EEEEEE" fontname="helvetica"] 
+"CIA.China\nDHS.China"
+"CIA.AsiaOther\nDHS.AsiaOther"
+"CIA.Taiwan\nDHS.Taiwan"
+"CIA.Asia\nDHS.Asia"
+edge[arrowhead=normal style=solid color="#000000" constraint=true penwidth=1]
+"CIA.China\nDHS.China" -> "CIA.Asia\nDHS.Asia"
+"CIA.AsiaOther\nDHS.AsiaOther" -> "CIA.Asia\nDHS.Asia"
+"CIA.Taiwan\nDHS.Taiwan" -> "CIA.Asia\nDHS.Asia"
+edge[arrowhead=normal style=dotted color="#000000" constraint=true penwidth=1]
+node[shape=box] 
+{rank=source Legend [fillcolor= white margin=0 label=< 
+ <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4"> 
+<TR> <TD COLSPAN="2"><font face="Arial Black"> Nodes</font></TD> </TR> 
+<TR> 
+ <TD bgcolor="#EEEEEE" fontname="helvetica">congruent</TD> 
+ <TD>4</TD> 
+ </TR> 
+<TR> <TD COLSPAN="2"><font face = "Arial Black"> Edges </font></TD> </TR> 
+<TR> 
+ <TD><font color ="#000000">is_a (input)</font></TD><TD>3</TD>
+</TR>
+</TABLE> 
+ >] } 
+}

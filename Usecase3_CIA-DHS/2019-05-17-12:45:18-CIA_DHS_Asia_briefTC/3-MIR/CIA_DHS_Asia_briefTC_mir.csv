@@ -1,0 +1,16 @@
+CIA.Asia,>,DHS.AsiaOther,deduced
+CIA.Asia,>,DHS.China,deduced
+CIA.Asia,>,DHS.Taiwan,deduced
+CIA.AsiaOther,!,DHS.China,deduced
+CIA.AsiaOther,!,DHS.Taiwan,deduced
+CIA.China,!,DHS.AsiaOther,deduced
+CIA.Taiwan,!,DHS.AsiaOther,deduced
+CIA.AsiaOther,<,DHS.Asia,inferred
+CIA.China,<,DHS.Asia,inferred
+CIA.China,{=, >, <, !, ><},DHS.China,inferred
+CIA.China,{=, >, <, !, ><},DHS.Taiwan,inferred
+CIA.Taiwan,<,DHS.Asia,inferred
+CIA.Taiwan,{=, >, <, !, ><},DHS.China,inferred
+CIA.Taiwan,{=, >, <, !, ><},DHS.Taiwan,inferred
+CIA.Asia,=,DHS.Asia,input
+CIA.AsiaOther,=,DHS.AsiaOther,input

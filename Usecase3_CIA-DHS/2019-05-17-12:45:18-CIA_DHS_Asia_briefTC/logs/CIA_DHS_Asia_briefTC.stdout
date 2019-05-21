@@ -1,0 +1,55 @@
+##### Executing command:
+
+/Users/jessicacheng/EulerX/src-el/euler2 align CIA_DHS_Asia_briefTC.txt -r clingo 
+
+
+##### Euler version:
+
+master
+49e63e6a27be97ab30832180a47d214494388e15
+
+
+##### GraphViz version:
+
+dot - graphviz version 2.36.0 (20140111.2315)
+
+
+##### DLV version:
+
+DLV [build BEN/Dec 17 2012   gcc 4.2.1 (Apple Inc. build 5666) (dot 3)]
+
+usage: dlv {FRONTEND} {OPTIONS} [filename [filename [...]]]
+
+Specify -help for more detailed usage information.
+
+
+##### Running User, Host and Date:
+User:	jessicacheng
+Host:	wirelessprv-10-195-175-58.near.illinois.edu
+Date:	2019-05-17-12:45:18
+
+
+##### Euler Outputs:
+******* You are running example CIA_DHS_Asia_briefTC *******
+
+Possible world 0:
+{CIA.Asia"="DHS.Asia, CIA.AsiaOther"="DHS.AsiaOther, CIA.Taiwan"<"DHS.Asia, CIA.China"<"DHS.Asia, CIA.AsiaOther"<"DHS.Asia, CIA.Taiwan"="DHS.China, CIA.China"="DHS.Taiwan, CIA.Asia">"DHS.Taiwan, CIA.Asia">"DHS.China, CIA.Asia">"DHS.AsiaOther, CIA.Taiwan"!"DHS.Taiwan, CIA.Taiwan"!"DHS.AsiaOther, CIA.China"!"DHS.China, CIA.China"!"DHS.AsiaOther, CIA.AsiaOther"!"DHS.Taiwan, CIA.AsiaOther"!"DHS.China}
+
+Possible world 1:
+{CIA.Asia"="DHS.Asia, CIA.AsiaOther"="DHS.AsiaOther, CIA.Taiwan"<"DHS.Asia, CIA.Taiwan"<"DHS.China, CIA.China"<"DHS.Asia, CIA.AsiaOther"<"DHS.Asia, CIA.Asia">"DHS.Taiwan, CIA.Asia">"DHS.China, CIA.Asia">"DHS.AsiaOther, CIA.China">"DHS.Taiwan, CIA.China"><"DHS.China, CIA.Taiwan"!"DHS.Taiwan, CIA.Taiwan"!"DHS.AsiaOther, CIA.China"!"DHS.AsiaOther, CIA.AsiaOther"!"DHS.Taiwan, CIA.AsiaOther"!"DHS.China}
+
+Possible world 2:
+{CIA.Asia"="DHS.Asia, CIA.AsiaOther"="DHS.AsiaOther, CIA.Taiwan"<"DHS.Asia, CIA.China"<"DHS.Taiwan, CIA.China"<"DHS.Asia, CIA.AsiaOther"<"DHS.Asia, CIA.Asia">"DHS.Taiwan, CIA.Asia">"DHS.China, CIA.Asia">"DHS.AsiaOther, CIA.Taiwan">"DHS.China, CIA.Taiwan"><"DHS.Taiwan, CIA.Taiwan"!"DHS.AsiaOther, CIA.China"!"DHS.China, CIA.China"!"DHS.AsiaOther, CIA.AsiaOther"!"DHS.Taiwan, CIA.AsiaOther"!"DHS.China}
+
+Possible world 3:
+{CIA.Asia"="DHS.Asia, CIA.AsiaOther"="DHS.AsiaOther, CIA.Taiwan"<"DHS.Asia, CIA.China"<"DHS.Asia, CIA.AsiaOther"<"DHS.Asia, CIA.Taiwan"="DHS.Taiwan, CIA.China"="DHS.China, CIA.Asia">"DHS.Taiwan, CIA.Asia">"DHS.China, CIA.Asia">"DHS.AsiaOther, CIA.Taiwan"!"DHS.China, CIA.Taiwan"!"DHS.AsiaOther, CIA.China"!"DHS.Taiwan, CIA.China"!"DHS.AsiaOther, CIA.AsiaOther"!"DHS.Taiwan, CIA.AsiaOther"!"DHS.China}
+
+Possible world 4:
+{CIA.Asia"="DHS.Asia, CIA.AsiaOther"="DHS.AsiaOther, CIA.Taiwan"<"DHS.Taiwan, CIA.Taiwan"<"DHS.Asia, CIA.China"<"DHS.Asia, CIA.AsiaOther"<"DHS.Asia, CIA.Asia">"DHS.Taiwan, CIA.Asia">"DHS.China, CIA.Asia">"DHS.AsiaOther, CIA.China">"DHS.China, CIA.China"><"DHS.Taiwan, CIA.Taiwan"!"DHS.China, CIA.Taiwan"!"DHS.AsiaOther, CIA.China"!"DHS.AsiaOther, CIA.AsiaOther"!"DHS.Taiwan, CIA.AsiaOther"!"DHS.China}
+
+Possible world 5:
+{CIA.Asia"="DHS.Asia, CIA.AsiaOther"="DHS.AsiaOther, CIA.Taiwan"<"DHS.Asia, CIA.China"<"DHS.Asia, CIA.China"<"DHS.China, CIA.AsiaOther"<"DHS.Asia, CIA.Asia">"DHS.Taiwan, CIA.Asia">"DHS.China, CIA.Asia">"DHS.AsiaOther, CIA.Taiwan">"DHS.Taiwan, CIA.Taiwan"><"DHS.China, CIA.Taiwan"!"DHS.AsiaOther, CIA.China"!"DHS.Taiwan, CIA.China"!"DHS.AsiaOther, CIA.AsiaOther"!"DHS.Taiwan, CIA.AsiaOther"!"DHS.China}
+
+Possible world 6:
+{CIA.Asia"="DHS.Asia, CIA.AsiaOther"="DHS.AsiaOther, CIA.Taiwan"<"DHS.Asia, CIA.China"<"DHS.Asia, CIA.AsiaOther"<"DHS.Asia, CIA.Asia">"DHS.Taiwan, CIA.Asia">"DHS.China, CIA.Asia">"DHS.AsiaOther, CIA.Taiwan"><"DHS.Taiwan, CIA.Taiwan"><"DHS.China, CIA.China"><"DHS.Taiwan, CIA.China"><"DHS.China, CIA.Taiwan"!"DHS.AsiaOther, CIA.China"!"DHS.AsiaOther, CIA.AsiaOther"!"DHS.Taiwan, CIA.AsiaOther"!"DHS.China}
+

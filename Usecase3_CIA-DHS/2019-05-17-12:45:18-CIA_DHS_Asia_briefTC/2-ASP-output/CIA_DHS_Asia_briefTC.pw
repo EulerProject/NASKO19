@@ -1,0 +1,21 @@
+
+Possible world 0:
+{CIA.Asia"="DHS.Asia, CIA.AsiaOther"="DHS.AsiaOther, CIA.Taiwan"<"DHS.Asia, CIA.China"<"DHS.Asia, CIA.AsiaOther"<"DHS.Asia, CIA.Taiwan"="DHS.China, CIA.China"="DHS.Taiwan, CIA.Asia">"DHS.Taiwan, CIA.Asia">"DHS.China, CIA.Asia">"DHS.AsiaOther, CIA.Taiwan"!"DHS.Taiwan, CIA.Taiwan"!"DHS.AsiaOther, CIA.China"!"DHS.China, CIA.China"!"DHS.AsiaOther, CIA.AsiaOther"!"DHS.Taiwan, CIA.AsiaOther"!"DHS.China}
+
+Possible world 1:
+{CIA.Asia"="DHS.Asia, CIA.AsiaOther"="DHS.AsiaOther, CIA.Taiwan"<"DHS.Asia, CIA.Taiwan"<"DHS.China, CIA.China"<"DHS.Asia, CIA.AsiaOther"<"DHS.Asia, CIA.Asia">"DHS.Taiwan, CIA.Asia">"DHS.China, CIA.Asia">"DHS.AsiaOther, CIA.China">"DHS.Taiwan, CIA.China"><"DHS.China, CIA.Taiwan"!"DHS.Taiwan, CIA.Taiwan"!"DHS.AsiaOther, CIA.China"!"DHS.AsiaOther, CIA.AsiaOther"!"DHS.Taiwan, CIA.AsiaOther"!"DHS.China}
+
+Possible world 2:
+{CIA.Asia"="DHS.Asia, CIA.AsiaOther"="DHS.AsiaOther, CIA.Taiwan"<"DHS.Asia, CIA.China"<"DHS.Taiwan, CIA.China"<"DHS.Asia, CIA.AsiaOther"<"DHS.Asia, CIA.Asia">"DHS.Taiwan, CIA.Asia">"DHS.China, CIA.Asia">"DHS.AsiaOther, CIA.Taiwan">"DHS.China, CIA.Taiwan"><"DHS.Taiwan, CIA.Taiwan"!"DHS.AsiaOther, CIA.China"!"DHS.China, CIA.China"!"DHS.AsiaOther, CIA.AsiaOther"!"DHS.Taiwan, CIA.AsiaOther"!"DHS.China}
+
+Possible world 3:
+{CIA.Asia"="DHS.Asia, CIA.AsiaOther"="DHS.AsiaOther, CIA.Taiwan"<"DHS.Asia, CIA.China"<"DHS.Asia, CIA.AsiaOther"<"DHS.Asia, CIA.Taiwan"="DHS.Taiwan, CIA.China"="DHS.China, CIA.Asia">"DHS.Taiwan, CIA.Asia">"DHS.China, CIA.Asia">"DHS.AsiaOther, CIA.Taiwan"!"DHS.China, CIA.Taiwan"!"DHS.AsiaOther, CIA.China"!"DHS.Taiwan, CIA.China"!"DHS.AsiaOther, CIA.AsiaOther"!"DHS.Taiwan, CIA.AsiaOther"!"DHS.China}
+
+Possible world 4:
+{CIA.Asia"="DHS.Asia, CIA.AsiaOther"="DHS.AsiaOther, CIA.Taiwan"<"DHS.Taiwan, CIA.Taiwan"<"DHS.Asia, CIA.China"<"DHS.Asia, CIA.AsiaOther"<"DHS.Asia, CIA.Asia">"DHS.Taiwan, CIA.Asia">"DHS.China, CIA.Asia">"DHS.AsiaOther, CIA.China">"DHS.China, CIA.China"><"DHS.Taiwan, CIA.Taiwan"!"DHS.China, CIA.Taiwan"!"DHS.AsiaOther, CIA.China"!"DHS.AsiaOther, CIA.AsiaOther"!"DHS.Taiwan, CIA.AsiaOther"!"DHS.China}
+
+Possible world 5:
+{CIA.Asia"="DHS.Asia, CIA.AsiaOther"="DHS.AsiaOther, CIA.Taiwan"<"DHS.Asia, CIA.China"<"DHS.Asia, CIA.China"<"DHS.China, CIA.AsiaOther"<"DHS.Asia, CIA.Asia">"DHS.Taiwan, CIA.Asia">"DHS.China, CIA.Asia">"DHS.AsiaOther, CIA.Taiwan">"DHS.Taiwan, CIA.Taiwan"><"DHS.China, CIA.Taiwan"!"DHS.AsiaOther, CIA.China"!"DHS.Taiwan, CIA.China"!"DHS.AsiaOther, CIA.AsiaOther"!"DHS.Taiwan, CIA.AsiaOther"!"DHS.China}
+
+Possible world 6:
+{CIA.Asia"="DHS.Asia, CIA.AsiaOther"="DHS.AsiaOther, CIA.Taiwan"<"DHS.Asia, CIA.China"<"DHS.Asia, CIA.AsiaOther"<"DHS.Asia, CIA.Asia">"DHS.Taiwan, CIA.Asia">"DHS.China, CIA.Asia">"DHS.AsiaOther, CIA.Taiwan"><"DHS.Taiwan, CIA.Taiwan"><"DHS.China, CIA.China"><"DHS.Taiwan, CIA.China"><"DHS.China, CIA.Taiwan"!"DHS.AsiaOther, CIA.China"!"DHS.AsiaOther, CIA.AsiaOther"!"DHS.Taiwan, CIA.AsiaOther"!"DHS.China}

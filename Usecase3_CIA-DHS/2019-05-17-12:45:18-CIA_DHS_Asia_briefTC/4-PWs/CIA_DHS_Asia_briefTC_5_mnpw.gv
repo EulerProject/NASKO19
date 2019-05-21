@@ -1,0 +1,50 @@
+digraph{
+rankdir=RL
+node[shape=box style="filled,rounded" fillcolor="#EEEEEE" fontname="helvetica"] 
+"CIA.AsiaOther\nDHS.AsiaOther"
+"CIA.Asia\nDHS.Asia"
+node[shape=note style=filled fillcolor="#FFFFCC" fontname="helvetica"] 
+"DHS.China"
+"DHS.Taiwan"
+node[shape=box style=filled fillcolor="#CCFFCC" fontname="helvetica"] 
+"CIA.China"
+"CIA.Taiwan"
+edge[arrowhead=normal style=solid color="#FF0000" constraint=true penwidth=1]
+"CIA.China" -> "DHS.China"
+"DHS.Taiwan" -> "CIA.Taiwan"
+edge[arrowhead=none style=dashed color="#FF0000" constraint=false penwidth=1]
+"CIA.Taiwan" -> "DHS.China"
+edge[arrowhead=normal style=dotted color="#000000" constraint=true penwidth=1]
+edge[arrowhead=normal style=solid color="#000000" constraint=true penwidth=1]
+"CIA.Taiwan" -> "CIA.Asia\nDHS.Asia"
+"CIA.AsiaOther\nDHS.AsiaOther" -> "CIA.Asia\nDHS.Asia"
+"DHS.China" -> "CIA.Asia\nDHS.Asia"
+node[shape=box] 
+{rank=source Legend [fillcolor= white margin=0 label=< 
+ <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4"> 
+<TR> <TD COLSPAN="2"><font face="Arial Black"> Nodes</font></TD> </TR> 
+<TR> 
+ <TD bgcolor="#EEEEEE" fontname="helvetica">congruent</TD> 
+ <TD>2</TD> 
+ </TR> 
+<TR> 
+ <TD bgcolor="#FFFFCC" fontname="helvetica">DHS</TD> 
+ <TD>2</TD> 
+ </TR> 
+<TR> 
+ <TD bgcolor="#CCFFCC" fontname="helvetica">CIA</TD> 
+ <TD>2</TD> 
+ </TR> 
+<TR> <TD COLSPAN="2"><font face = "Arial Black"> Edges </font></TD> </TR> 
+<TR> 
+ <TD><font color ="#FF0000">is_a (inferred)</font></TD><TD>2</TD>
+</TR>
+<TR> 
+ <TD><font color ="#FF0000">overlaps (inferred)</font></TD><TD>1</TD>
+</TR>
+<TR> 
+ <TD><font color ="#000000">is_a (input)</font></TD><TD>3</TD>
+</TR>
+</TABLE> 
+ >] } 
+}

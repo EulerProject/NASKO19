@@ -1,0 +1,56 @@
+CIA.Asia:
+  concept: Asia
+  group: CIA
+CIA.AsiaOther:
+  concept: AsiaOther
+  group: CIA
+CIA.China:
+  concept: China
+  group: CIA
+CIA.Taiwan:
+  concept: Taiwan
+  group: CIA
+DHS.Asia:
+  concept: Asia
+  group: DHS
+DHS.AsiaOther:
+  concept: AsiaOther
+  group: DHS
+DHS.China:
+  concept: China
+  group: DHS
+DHS.Taiwan:
+  concept: Taiwan
+  group: DHS
+CIA.AsiaOther_CIA.Asia:
+  label: isa
+  s: CIA.AsiaOther
+  t: CIA.Asia
+CIA.AsiaOther_DHS.AsiaOther:
+  label: '='
+  s: CIA.AsiaOther
+  t: DHS.AsiaOther
+CIA.Asia_DHS.Asia:
+  label: '='
+  s: CIA.Asia
+  t: DHS.Asia
+CIA.China_CIA.Asia:
+  label: isa
+  s: CIA.China
+  t: CIA.Asia
+CIA.Taiwan_CIA.Asia:
+  label: isa
+  s: CIA.Taiwan
+  t: CIA.Asia
+DHS.AsiaOther_DHS.Asia:
+  label: isa
+  s: DHS.AsiaOther
+  t: DHS.Asia
+DHS.China_DHS.Asia:
+  label: isa
+  s: DHS.China
+  t: DHS.Asia
+DHS.Taiwan_DHS.Asia:
+  label: isa
+  s: DHS.Taiwan
+  t: DHS.Asia
