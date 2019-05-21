@@ -1,0 +1,3 @@
+pws = [{'CIA.ChinaOther,ISO.AsiaOther': 1, 'CIA.AsiaOther,ISO.China': 1, 'CIA.Taiwan,ISO.China': 2, 'CIA.China,ISO.ChinaOther': 4, 'CIA.ChinaOther,ISO.China': 2, 'CIA.Asia,ISO.Asia': 4, 'CIA.Asia,ISO.China': 8, 'CIA.China,ISO.Taiwan': 1, 'CIA.AsiaOther,ISO.Taiwan': 1, 'CIA.ChinaOther,ISO.ChinaOther': 4, 'CIA.Taiwan,ISO.Taiwan': 4, 'CIA.Taiwan,ISO.AsiaOther': 1, 'CIA.AsiaOther,ISO.ChinaOther': 1, 'CIA.Asia,ISO.Taiwan': 8, 'CIA.China,ISO.Asia': 2, 'CIA.Asia,ISO.AsiaOther': 8, 'CIA.China,ISO.China': 2, 'CIA.ChinaOther,ISO.Asia': 2, 'CIA.Taiwan,ISO.Asia': 2, 'CIA.ChinaOther,ISO.Taiwan': 1, 'CIA.AsiaOther,ISO.AsiaOther': 4, 'CIA.China,ISO.AsiaOther': 1, 'CIA.AsiaOther,ISO.Asia': 2, 'CIA.Asia,ISO.ChinaOther': 8, 'CIA.Taiwan,ISO.ChinaOther': 1}]
+npw = 1
+cvFlag = False

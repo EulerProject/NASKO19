@@ -1,0 +1,11 @@
+firstTName = 'ISO'
+secondTName = 'CIA'
+thirdTName = ''
+fourthTName = ''
+fifthTName = ''
+allRcgEdgesDict = {}
+numOfPws = 1
+avFlag = False
+allRcgNodesDict = {'congruent.ISO.Asia\\nCIA.Asia': {'concept': 'ISO.Asia\\nCIA.Asia', 'group': 'congruent'}, 'congruent.CIA.China\\nCIA.ChinaOther\\nISO.ChinaOther': {'concept': 'CIA.China\\nCIA.ChinaOther\\nISO.ChinaOther', 'group': 'congruent'}, 'congruent.ISO.AsiaOther\\nCIA.AsiaOther': {'concept': 'ISO.AsiaOther\\nCIA.AsiaOther', 'group': 'congruent'}, 'ISO.China': {'concept': 'China', 'group': 'ISO'}, 'congruent.ISO.Taiwan\\nCIA.Taiwan': {'concept': 'ISO.Taiwan\\nCIA.Taiwan', 'group': 'congruent'}}
+trlist = [['ISO.Taiwan\\nCIA.Taiwan', 'ISO.China', 0], ['ISO.China', 'ISO.Asia\\nCIA.Asia', 0], ['ISO.AsiaOther\\nCIA.AsiaOther', 'ISO.Asia\\nCIA.Asia', 0], ['CIA.China\\nCIA.ChinaOther\\nISO.ChinaOther', 'ISO.China', 0], ['ISO.Taiwan\\nCIA.Taiwan', 'ISO.Asia\\nCIA.Asia', 2], ['CIA.China\\nCIA.ChinaOther\\nISO.ChinaOther', 'ISO.Asia\\nCIA.Asia', 2]]
+avFlag = True

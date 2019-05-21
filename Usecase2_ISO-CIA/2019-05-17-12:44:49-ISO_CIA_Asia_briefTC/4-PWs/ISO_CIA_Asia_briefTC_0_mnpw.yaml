@@ -1,0 +1,31 @@
+ISO.China:
+  concept: China
+  group: ISO
+congruent.CIA.China\nCIA.ChinaOther\nISO.ChinaOther:
+  concept: CIA.China\nCIA.ChinaOther\nISO.ChinaOther
+  group: congruent
+congruent.ISO.AsiaOther\nCIA.AsiaOther:
+  concept: ISO.AsiaOther\nCIA.AsiaOther
+  group: congruent
+congruent.ISO.Asia\nCIA.Asia:
+  concept: ISO.Asia\nCIA.Asia
+  group: congruent
+congruent.ISO.Taiwan\nCIA.Taiwan:
+  concept: ISO.Taiwan\nCIA.Taiwan
+  group: congruent
+CIA.China\nCIA.ChinaOther\nISO.ChinaOther_ISO.China:
+  label: is_a (input)
+  s: CIA.China\nCIA.ChinaOther\nISO.ChinaOther
+  t: ISO.China
+ISO.AsiaOther\nCIA.AsiaOther_ISO.Asia\nCIA.Asia:
+  label: is_a (input)
+  s: ISO.AsiaOther\nCIA.AsiaOther
+  t: ISO.Asia\nCIA.Asia
+ISO.China_ISO.Asia\nCIA.Asia:
+  label: is_a (input)
+  s: ISO.China
+  t: ISO.Asia\nCIA.Asia
+ISO.Taiwan\nCIA.Taiwan_ISO.China:
+  label: is_a (input)
+  s: ISO.Taiwan\nCIA.Taiwan
+  t: ISO.China

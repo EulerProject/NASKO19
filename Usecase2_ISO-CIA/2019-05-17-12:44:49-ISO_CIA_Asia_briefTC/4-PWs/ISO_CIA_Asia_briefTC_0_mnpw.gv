@@ -1,0 +1,34 @@
+digraph{
+rankdir=RL
+node[shape=box style="filled,rounded" fillcolor="#EEEEEE" fontname="helvetica"] 
+"ISO.Asia\nCIA.Asia"
+"CIA.China\nCIA.ChinaOther\nISO.ChinaOther"
+"ISO.AsiaOther\nCIA.AsiaOther"
+"ISO.Taiwan\nCIA.Taiwan"
+node[shape=box style=filled fillcolor="#CCFFCC" fontname="helvetica"] 
+"ISO.China"
+edge[arrowhead=normal style=solid color="#000000" constraint=true penwidth=1]
+"ISO.Taiwan\nCIA.Taiwan" -> "ISO.China"
+"ISO.AsiaOther\nCIA.AsiaOther" -> "ISO.Asia\nCIA.Asia"
+"ISO.China" -> "ISO.Asia\nCIA.Asia"
+"CIA.China\nCIA.ChinaOther\nISO.ChinaOther" -> "ISO.China"
+edge[arrowhead=normal style=dotted color="#000000" constraint=true penwidth=1]
+node[shape=box] 
+{rank=source Legend [fillcolor= white margin=0 label=< 
+ <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4"> 
+<TR> <TD COLSPAN="2"><font face="Arial Black"> Nodes</font></TD> </TR> 
+<TR> 
+ <TD bgcolor="#EEEEEE" fontname="helvetica">congruent</TD> 
+ <TD>4</TD> 
+ </TR> 
+<TR> 
+ <TD bgcolor="#CCFFCC" fontname="helvetica">ISO</TD> 
+ <TD>1</TD> 
+ </TR> 
+<TR> <TD COLSPAN="2"><font face = "Arial Black"> Edges </font></TD> </TR> 
+<TR> 
+ <TD><font color ="#000000">is_a (input)</font></TD><TD>4</TD>
+</TR>
+</TABLE> 
+ >] } 
+}

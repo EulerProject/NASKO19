@@ -1,0 +1,58 @@
+digraph{
+rankdir=LR
+node[shape=circle style=filled fillcolor="#FFFFFF"] 
+node[shape=note style=filled fillcolor="#FFFFCC" fontname="helvetica"] 
+"CIA.China"
+"CIA.AsiaOther"
+"CIA.ChinaOther"
+"CIA.Taiwan"
+"CIA.Asia"
+node[shape=circle style=filled fillcolor="#FFFFFF"] 
+node[shape=box style=filled fillcolor="#CCFFCC" fontname="helvetica"] 
+"ISO.AsiaOther"
+"ISO.ChinaOther"
+"ISO.Taiwan"
+"ISO.Asia"
+"ISO.China"
+edge[style=solid color="#000000" constraint=true penwidth=1 dir=forward]
+edge[style=solid color="#000000" constraint=true penwidth=1 dir=forward]
+"CIA.AsiaOther" -> "CIA.Asia"
+"CIA.ChinaOther" -> "CIA.China"
+"CIA.China" -> "CIA.Asia"
+"CIA.Taiwan" -> "CIA.Asia"
+edge[style=solid color="#000000" constraint=true penwidth=1 dir=forward]
+edge[style=solid color="#000000" constraint=true penwidth=1 dir=forward]
+"ISO.Asia" -> "ISO.China" [dir=back]
+"ISO.China" -> "ISO.Taiwan" [dir=back]
+"ISO.Asia" -> "ISO.AsiaOther" [dir=back]
+"ISO.China" -> "ISO.ChinaOther" [dir=back]
+edge[style=solid color="#000000" constraint=true penwidth=1 dir=forward]
+edge[style=dashed color="#AA00FF" constraint=true penwidth=2 dir=both]
+"ISO.Asia" -> "CIA.Asia" [label="="]
+"ISO.ChinaOther" -> "CIA.ChinaOther" [label="="]
+"ISO.AsiaOther" -> "CIA.AsiaOther" [label="="]
+node[shape=box] 
+{rank=source Legend [fillcolor= white margin=0 label=< 
+ <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4"> 
+<TR> <TD COLSPAN="2"><font face="Arial Black"> Nodes</font></TD> </TR> 
+<TR> 
+ <TD bgcolor="#FFFFCC" fontname="helvetica">CIA</TD> 
+ <TD>5</TD> 
+ </TR> 
+<TR> 
+ <TD bgcolor="#CCFFCC" fontname="helvetica">ISO</TD> 
+ <TD>5</TD> 
+ </TR> 
+<TR> <TD COLSPAN="2"><font face = "Arial Black"> Edges </font></TD> </TR> 
+<TR> 
+ <TD><font color ="#000000">is_a (CIA)</font></TD><TD>4</TD>
+</TR>
+<TR> 
+ <TD><font color ="#000000">is_a (ISO)</font></TD><TD>4</TD>
+</TR>
+<TR> 
+ <TD><font color ="#AA00FF">articulations</font></TD><TD>3</TD>
+</TR>
+</TABLE> 
+ >] } 
+}

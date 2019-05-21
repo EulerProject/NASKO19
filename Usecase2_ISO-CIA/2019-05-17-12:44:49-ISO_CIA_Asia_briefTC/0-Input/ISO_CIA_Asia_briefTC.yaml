@@ -1,0 +1,74 @@
+CIA.Asia:
+  concept: Asia
+  group: CIA
+CIA.AsiaOther:
+  concept: AsiaOther
+  group: CIA
+CIA.China:
+  concept: China
+  group: CIA
+CIA.ChinaOther:
+  concept: ChinaOther
+  group: CIA
+CIA.Taiwan:
+  concept: Taiwan
+  group: CIA
+ISO.Asia:
+  concept: Asia
+  group: ISO
+ISO.AsiaOther:
+  concept: AsiaOther
+  group: ISO
+ISO.China:
+  concept: China
+  group: ISO
+ISO.ChinaOther:
+  concept: ChinaOther
+  group: ISO
+ISO.Taiwan:
+  concept: Taiwan
+  group: ISO
+CIA.AsiaOther_CIA.Asia:
+  label: isa
+  s: CIA.AsiaOther
+  t: CIA.Asia
+CIA.ChinaOther_CIA.China:
+  label: isa
+  s: CIA.ChinaOther
+  t: CIA.China
+CIA.China_CIA.Asia:
+  label: isa
+  s: CIA.China
+  t: CIA.Asia
+CIA.Taiwan_CIA.Asia:
+  label: isa
+  s: CIA.Taiwan
+  t: CIA.Asia
+ISO.AsiaOther_CIA.AsiaOther:
+  label: '='
+  s: ISO.AsiaOther
+  t: CIA.AsiaOther
+ISO.AsiaOther_ISO.Asia:
+  label: isa
+  s: ISO.AsiaOther
+  t: ISO.Asia
+ISO.Asia_CIA.Asia:
+  label: '='
+  s: ISO.Asia
+  t: CIA.Asia
+ISO.ChinaOther_CIA.ChinaOther:
+  label: '='
+  s: ISO.ChinaOther
+  t: CIA.ChinaOther
+ISO.ChinaOther_ISO.China:
+  label: isa
+  s: ISO.ChinaOther
+  t: ISO.China
+ISO.China_ISO.Asia:
+  label: isa
+  s: ISO.China
+  t: ISO.Asia
+ISO.Taiwan_ISO.China:
+  label: isa
+  s: ISO.Taiwan
+  t: ISO.China

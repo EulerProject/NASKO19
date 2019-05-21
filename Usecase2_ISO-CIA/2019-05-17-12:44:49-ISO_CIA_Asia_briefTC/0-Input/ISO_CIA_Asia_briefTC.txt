@@ -1,0 +1,17 @@
+#Taxonomy 1 ISO 3166 with Regional Code from UN: https://github.com/lukes/ISO-3166-Countries-with-Regional-Codes
+#Taxonomy 2 CIA World Factbook https://www.cia.gov/library/publications/the-world-factbook/
+
+taxonomy ISO ISO3166
+(Asia China AsiaOther)
+(China Taiwan ChinaOther)
+
+taxonomy CIA WorldFactbook
+(Asia China Taiwan AsiaOther)
+(China ChinaOther)
+
+articulation ISO-CIA ISO-Homeland
+[ISO.Asia equals CIA.Asia]
+[ISO.ChinaOther equals CIA.ChinaOther]
+[ISO.AsiaOther equals CIA.AsiaOther]
+
+

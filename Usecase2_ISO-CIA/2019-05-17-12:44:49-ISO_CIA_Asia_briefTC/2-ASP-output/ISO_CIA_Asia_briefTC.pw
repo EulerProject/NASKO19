@@ -1,0 +1,3 @@
+
+Possible world 0:
+{ISO.Asia">"CIA.China, ISO.China">"CIA.China, ISO.Asia">"CIA.Taiwan, ISO.China">"CIA.Taiwan, ISO.Asia">"CIA.AsiaOther, ISO.China">"CIA.ChinaOther, ISO.Asia">"CIA.ChinaOther, ISO.ChinaOther"="CIA.China, ISO.Asia"="CIA.Asia, ISO.Taiwan"="CIA.Taiwan, ISO.AsiaOther"="CIA.AsiaOther, ISO.ChinaOther"="CIA.ChinaOther, ISO.Taiwan"<"CIA.Asia, ISO.China"<"CIA.Asia, ISO.AsiaOther"<"CIA.Asia, ISO.ChinaOther"<"CIA.Asia, ISO.AsiaOther"!"CIA.China, ISO.Taiwan"!"CIA.China, ISO.AsiaOther"!"CIA.Taiwan, ISO.ChinaOther"!"CIA.Taiwan, ISO.Taiwan"!"CIA.AsiaOther, ISO.China"!"CIA.AsiaOther, ISO.ChinaOther"!"CIA.AsiaOther, ISO.Taiwan"!"CIA.ChinaOther, ISO.AsiaOther"!"CIA.ChinaOther}
