@@ -1,0 +1,53 @@
+digraph{
+rankdir=RL
+node[shape=note style=filled fillcolor="#FFFFCC" fontname="helvetica"] 
+"DHS.China"
+"DHS.Taiwan"
+node[shape=box style="filled,rounded" fillcolor="#EEEEEE" fontname="helvetica"] 
+"ISO.VietNam\nDHS.Vietnam"
+"ISO.ChinaOther\nDHS.ChinaOther"
+"ISO.AsiaOther\nDHS.AsiaOther"
+"ISO.Macao\nDHS.Macau"
+"ISO.Asia\nDHS.Asia"
+"ISO.HongKong\nDHS.HongKong"
+node[shape=box style=filled fillcolor="#CCFFCC" fontname="helvetica"] 
+"ISO.Taiwan"
+"ISO.China"
+edge[arrowhead=normal style=dotted color="#000000" constraint=true penwidth=1]
+edge[arrowhead=normal style=solid color="#000000" constraint=true penwidth=1]
+"ISO.China" -> "ISO.Asia\nDHS.Asia"
+"ISO.Taiwan" -> "ISO.China"
+"ISO.VietNam\nDHS.Vietnam" -> "ISO.Asia\nDHS.Asia"
+"ISO.AsiaOther\nDHS.AsiaOther" -> "ISO.Asia\nDHS.Asia"
+"ISO.Macao\nDHS.Macau" -> "ISO.China"
+"ISO.ChinaOther\nDHS.ChinaOther" -> "ISO.China"
+"ISO.HongKong\nDHS.HongKong" -> "ISO.China"
+edge[arrowhead=normal style=solid color="#FF0000" constraint=true penwidth=1]
+"DHS.China" -> "ISO.Taiwan"
+"DHS.Taiwan" -> "ISO.Taiwan"
+node[shape=box] 
+{rank=source Legend [fillcolor= white margin=0 label=< 
+ <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4"> 
+<TR> <TD COLSPAN="2"><font face="Arial Black"> Nodes</font></TD> </TR> 
+<TR> 
+ <TD bgcolor="#FFFFCC" fontname="helvetica">DHS</TD> 
+ <TD>2</TD> 
+ </TR> 
+<TR> 
+ <TD bgcolor="#EEEEEE" fontname="helvetica">congruent</TD> 
+ <TD>6</TD> 
+ </TR> 
+<TR> 
+ <TD bgcolor="#CCFFCC" fontname="helvetica">ISO</TD> 
+ <TD>2</TD> 
+ </TR> 
+<TR> <TD COLSPAN="2"><font face = "Arial Black"> Edges </font></TD> </TR> 
+<TR> 
+ <TD><font color ="#000000">is_a (input)</font></TD><TD>7</TD>
+</TR>
+<TR> 
+ <TD><font color ="#FF0000">is_a (inferred)</font></TD><TD>2</TD>
+</TR>
+</TABLE> 
+ >] } 
+}

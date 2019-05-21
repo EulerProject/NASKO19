@@ -1,0 +1,360 @@
+DHS.China:
+  concept: China
+  group: DHS
+DHS.Taiwan:
+  concept: Taiwan
+  group: DHS
+ISO.China:
+  concept: China
+  group: ISO
+ISO.TaiwanProvinceofChina:
+  concept: TaiwanProvinceofChina
+  group: ISO
+congruent.ISO.Afghanistan\nDHS.Afghanistan:
+  concept: ISO.Afghanistan\nDHS.Afghanistan
+  group: congruent
+congruent.ISO.Armenia\nDHS.Armenia:
+  concept: ISO.Armenia\nDHS.Armenia
+  group: congruent
+congruent.ISO.Asia\nDHS.Asia:
+  concept: ISO.Asia\nDHS.Asia
+  group: congruent
+congruent.ISO.Azerbaijan\nDHS.Azerbaijan:
+  concept: ISO.Azerbaijan\nDHS.Azerbaijan
+  group: congruent
+congruent.ISO.Bahrain\nDHS.Bahrain:
+  concept: ISO.Bahrain\nDHS.Bahrain
+  group: congruent
+congruent.ISO.Bangladesh\nDHS.Bangladesh:
+  concept: ISO.Bangladesh\nDHS.Bangladesh
+  group: congruent
+congruent.ISO.Bhutan\nDHS.Bhutan:
+  concept: ISO.Bhutan\nDHS.Bhutan
+  group: congruent
+congruent.ISO.BruneiDarussalam\nDHS.Brunei:
+  concept: ISO.BruneiDarussalam\nDHS.Brunei
+  group: congruent
+congruent.ISO.Cambodia\nDHS.Cambodia:
+  concept: ISO.Cambodia\nDHS.Cambodia
+  group: congruent
+congruent.ISO.Cyprus\nDHS.Cyprus:
+  concept: ISO.Cyprus\nDHS.Cyprus
+  group: congruent
+congruent.ISO.Georgia\nDHS.Georgia:
+  concept: ISO.Georgia\nDHS.Georgia
+  group: congruent
+congruent.ISO.HongKong\nDHS.HongKong:
+  concept: ISO.HongKong\nDHS.HongKong
+  group: congruent
+congruent.ISO.India\nDHS.India:
+  concept: ISO.India\nDHS.India
+  group: congruent
+congruent.ISO.Indonesia\nDHS.Indonesia:
+  concept: ISO.Indonesia\nDHS.Indonesia
+  group: congruent
+congruent.ISO.IranIslamicRepublicof\nDHS.Iran:
+  concept: ISO.IranIslamicRepublicof\nDHS.Iran
+  group: congruent
+congruent.ISO.Iraq\nDHS.Iraq:
+  concept: ISO.Iraq\nDHS.Iraq
+  group: congruent
+congruent.ISO.Israel\nDHS.Israel:
+  concept: ISO.Israel\nDHS.Israel
+  group: congruent
+congruent.ISO.Japan\nDHS.Japan:
+  concept: ISO.Japan\nDHS.Japan
+  group: congruent
+congruent.ISO.Jordan\nDHS.Jordan:
+  concept: ISO.Jordan\nDHS.Jordan
+  group: congruent
+congruent.ISO.KazakDHStan\nDHS.KazakDHStan:
+  concept: ISO.KazakDHStan\nDHS.KazakDHStan
+  group: congruent
+congruent.ISO.KoreaDemocraticPeoplesRepublicof\nDHS.NorthKorea:
+  concept: ISO.KoreaDemocraticPeoplesRepublicof\nDHS.NorthKorea
+  group: congruent
+congruent.ISO.KoreaRepublicof\nDHS.SouthKorea:
+  concept: ISO.KoreaRepublicof\nDHS.SouthKorea
+  group: congruent
+congruent.ISO.Kuwait\nDHS.Kuwait:
+  concept: ISO.Kuwait\nDHS.Kuwait
+  group: congruent
+congruent.ISO.Kyrgyzstan\nDHS.Kyrgyzstan:
+  concept: ISO.Kyrgyzstan\nDHS.Kyrgyzstan
+  group: congruent
+congruent.ISO.LaoPeoplesDemocraticRepublic\nDHS.Laos:
+  concept: ISO.LaoPeoplesDemocraticRepublic\nDHS.Laos
+  group: congruent
+congruent.ISO.Lebanon\nDHS.Lebanon:
+  concept: ISO.Lebanon\nDHS.Lebanon
+  group: congruent
+congruent.ISO.Macao\nDHS.Macau:
+  concept: ISO.Macao\nDHS.Macau
+  group: congruent
+congruent.ISO.Malaysia\nDHS.Malaysia:
+  concept: ISO.Malaysia\nDHS.Malaysia
+  group: congruent
+congruent.ISO.Maldives\nDHS.Maldives:
+  concept: ISO.Maldives\nDHS.Maldives
+  group: congruent
+congruent.ISO.Mongolia\nDHS.Mongolia:
+  concept: ISO.Mongolia\nDHS.Mongolia
+  group: congruent
+congruent.ISO.Myanmar\nDHS.Burma:
+  concept: ISO.Myanmar\nDHS.Burma
+  group: congruent
+congruent.ISO.Nepal\nDHS.Nepal:
+  concept: ISO.Nepal\nDHS.Nepal
+  group: congruent
+congruent.ISO.Oman\nDHS.Oman:
+  concept: ISO.Oman\nDHS.Oman
+  group: congruent
+congruent.ISO.Pakistan\nDHS.Pakistan:
+  concept: ISO.Pakistan\nDHS.Pakistan
+  group: congruent
+congruent.ISO.Philippines\nDHS.Philippines:
+  concept: ISO.Philippines\nDHS.Philippines
+  group: congruent
+congruent.ISO.Qatar\nDHS.Qatar:
+  concept: ISO.Qatar\nDHS.Qatar
+  group: congruent
+congruent.ISO.SaudiArabia\nDHS.SaudiArabia:
+  concept: ISO.SaudiArabia\nDHS.SaudiArabia
+  group: congruent
+congruent.ISO.Singapore\nDHS.Singapore:
+  concept: ISO.Singapore\nDHS.Singapore
+  group: congruent
+congruent.ISO.SriLanka\nDHS.SriLanka:
+  concept: ISO.SriLanka\nDHS.SriLanka
+  group: congruent
+congruent.ISO.Tajikistan\nDHS.Tajikistan:
+  concept: ISO.Tajikistan\nDHS.Tajikistan
+  group: congruent
+congruent.ISO.Thailand\nDHS.Thailand:
+  concept: ISO.Thailand\nDHS.Thailand
+  group: congruent
+congruent.ISO.TimorLeste\nDHS.EastTimor:
+  concept: ISO.TimorLeste\nDHS.EastTimor
+  group: congruent
+congruent.ISO.Turkey\nDHS.Turkey:
+  concept: ISO.Turkey\nDHS.Turkey
+  group: congruent
+congruent.ISO.Turkmenistan\nDHS.Turkmenistan:
+  concept: ISO.Turkmenistan\nDHS.Turkmenistan
+  group: congruent
+congruent.ISO.UnitedArabEmirates\nDHS.UnitedArabEmirates:
+  concept: ISO.UnitedArabEmirates\nDHS.UnitedArabEmirates
+  group: congruent
+congruent.ISO.Uzbekistan\nDHS.Uzbekistan:
+  concept: ISO.Uzbekistan\nDHS.Uzbekistan
+  group: congruent
+congruent.ISO.VietNam\nDHS.Vietnam:
+  concept: ISO.VietNam\nDHS.Vietnam
+  group: congruent
+congruent.ISO.Yemen\nDHS.Yemen:
+  concept: ISO.Yemen\nDHS.Yemen
+  group: congruent
+DHS.China_ISO.TaiwanProvinceofChina:
+  label: is_a (inferred)
+  s: DHS.China
+  t: ISO.TaiwanProvinceofChina
+DHS.Taiwan_ISO.TaiwanProvinceofChina:
+  label: is_a (inferred)
+  s: DHS.Taiwan
+  t: ISO.TaiwanProvinceofChina
+ISO.Afghanistan\nDHS.Afghanistan_ISO.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: ISO.Afghanistan\nDHS.Afghanistan
+  t: ISO.Asia\nDHS.Asia
+ISO.Armenia\nDHS.Armenia_ISO.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: ISO.Armenia\nDHS.Armenia
+  t: ISO.Asia\nDHS.Asia
+ISO.Azerbaijan\nDHS.Azerbaijan_ISO.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: ISO.Azerbaijan\nDHS.Azerbaijan
+  t: ISO.Asia\nDHS.Asia
+ISO.Bahrain\nDHS.Bahrain_ISO.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: ISO.Bahrain\nDHS.Bahrain
+  t: ISO.Asia\nDHS.Asia
+ISO.Bangladesh\nDHS.Bangladesh_ISO.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: ISO.Bangladesh\nDHS.Bangladesh
+  t: ISO.Asia\nDHS.Asia
+ISO.Bhutan\nDHS.Bhutan_ISO.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: ISO.Bhutan\nDHS.Bhutan
+  t: ISO.Asia\nDHS.Asia
+ISO.BruneiDarussalam\nDHS.Brunei_ISO.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: ISO.BruneiDarussalam\nDHS.Brunei
+  t: ISO.Asia\nDHS.Asia
+ISO.Cambodia\nDHS.Cambodia_ISO.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: ISO.Cambodia\nDHS.Cambodia
+  t: ISO.Asia\nDHS.Asia
+ISO.China_ISO.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: ISO.China
+  t: ISO.Asia\nDHS.Asia
+ISO.Cyprus\nDHS.Cyprus_ISO.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: ISO.Cyprus\nDHS.Cyprus
+  t: ISO.Asia\nDHS.Asia
+ISO.Georgia\nDHS.Georgia_ISO.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: ISO.Georgia\nDHS.Georgia
+  t: ISO.Asia\nDHS.Asia
+ISO.HongKong\nDHS.HongKong_ISO.China:
+  label: is_a (input)
+  s: ISO.HongKong\nDHS.HongKong
+  t: ISO.China
+ISO.India\nDHS.India_ISO.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: ISO.India\nDHS.India
+  t: ISO.Asia\nDHS.Asia
+ISO.Indonesia\nDHS.Indonesia_ISO.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: ISO.Indonesia\nDHS.Indonesia
+  t: ISO.Asia\nDHS.Asia
+ISO.IranIslamicRepublicof\nDHS.Iran_ISO.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: ISO.IranIslamicRepublicof\nDHS.Iran
+  t: ISO.Asia\nDHS.Asia
+ISO.Iraq\nDHS.Iraq_ISO.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: ISO.Iraq\nDHS.Iraq
+  t: ISO.Asia\nDHS.Asia
+ISO.Israel\nDHS.Israel_ISO.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: ISO.Israel\nDHS.Israel
+  t: ISO.Asia\nDHS.Asia
+ISO.Japan\nDHS.Japan_ISO.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: ISO.Japan\nDHS.Japan
+  t: ISO.Asia\nDHS.Asia
+ISO.Jordan\nDHS.Jordan_ISO.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: ISO.Jordan\nDHS.Jordan
+  t: ISO.Asia\nDHS.Asia
+ISO.KazakDHStan\nDHS.KazakDHStan_ISO.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: ISO.KazakDHStan\nDHS.KazakDHStan
+  t: ISO.Asia\nDHS.Asia
+ISO.KoreaDemocraticPeoplesRepublicof\nDHS.NorthKorea_ISO.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: ISO.KoreaDemocraticPeoplesRepublicof\nDHS.NorthKorea
+  t: ISO.Asia\nDHS.Asia
+ISO.KoreaRepublicof\nDHS.SouthKorea_ISO.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: ISO.KoreaRepublicof\nDHS.SouthKorea
+  t: ISO.Asia\nDHS.Asia
+ISO.Kuwait\nDHS.Kuwait_ISO.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: ISO.Kuwait\nDHS.Kuwait
+  t: ISO.Asia\nDHS.Asia
+ISO.Kyrgyzstan\nDHS.Kyrgyzstan_ISO.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: ISO.Kyrgyzstan\nDHS.Kyrgyzstan
+  t: ISO.Asia\nDHS.Asia
+ISO.LaoPeoplesDemocraticRepublic\nDHS.Laos_ISO.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: ISO.LaoPeoplesDemocraticRepublic\nDHS.Laos
+  t: ISO.Asia\nDHS.Asia
+ISO.Lebanon\nDHS.Lebanon_ISO.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: ISO.Lebanon\nDHS.Lebanon
+  t: ISO.Asia\nDHS.Asia
+ISO.Macao\nDHS.Macau_ISO.China:
+  label: is_a (input)
+  s: ISO.Macao\nDHS.Macau
+  t: ISO.China
+ISO.Malaysia\nDHS.Malaysia_ISO.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: ISO.Malaysia\nDHS.Malaysia
+  t: ISO.Asia\nDHS.Asia
+ISO.Maldives\nDHS.Maldives_ISO.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: ISO.Maldives\nDHS.Maldives
+  t: ISO.Asia\nDHS.Asia
+ISO.Mongolia\nDHS.Mongolia_ISO.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: ISO.Mongolia\nDHS.Mongolia
+  t: ISO.Asia\nDHS.Asia
+ISO.Myanmar\nDHS.Burma_ISO.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: ISO.Myanmar\nDHS.Burma
+  t: ISO.Asia\nDHS.Asia
+ISO.Nepal\nDHS.Nepal_ISO.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: ISO.Nepal\nDHS.Nepal
+  t: ISO.Asia\nDHS.Asia
+ISO.Oman\nDHS.Oman_ISO.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: ISO.Oman\nDHS.Oman
+  t: ISO.Asia\nDHS.Asia
+ISO.Pakistan\nDHS.Pakistan_ISO.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: ISO.Pakistan\nDHS.Pakistan
+  t: ISO.Asia\nDHS.Asia
+ISO.Philippines\nDHS.Philippines_ISO.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: ISO.Philippines\nDHS.Philippines
+  t: ISO.Asia\nDHS.Asia
+ISO.Qatar\nDHS.Qatar_ISO.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: ISO.Qatar\nDHS.Qatar
+  t: ISO.Asia\nDHS.Asia
+ISO.SaudiArabia\nDHS.SaudiArabia_ISO.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: ISO.SaudiArabia\nDHS.SaudiArabia
+  t: ISO.Asia\nDHS.Asia
+ISO.Singapore\nDHS.Singapore_ISO.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: ISO.Singapore\nDHS.Singapore
+  t: ISO.Asia\nDHS.Asia
+ISO.SriLanka\nDHS.SriLanka_ISO.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: ISO.SriLanka\nDHS.SriLanka
+  t: ISO.Asia\nDHS.Asia
+ISO.TaiwanProvinceofChina_ISO.China:
+  label: is_a (input)
+  s: ISO.TaiwanProvinceofChina
+  t: ISO.China
+ISO.Tajikistan\nDHS.Tajikistan_ISO.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: ISO.Tajikistan\nDHS.Tajikistan
+  t: ISO.Asia\nDHS.Asia
+ISO.Thailand\nDHS.Thailand_ISO.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: ISO.Thailand\nDHS.Thailand
+  t: ISO.Asia\nDHS.Asia
+ISO.TimorLeste\nDHS.EastTimor_ISO.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: ISO.TimorLeste\nDHS.EastTimor
+  t: ISO.Asia\nDHS.Asia
+ISO.Turkey\nDHS.Turkey_ISO.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: ISO.Turkey\nDHS.Turkey
+  t: ISO.Asia\nDHS.Asia
+ISO.Turkmenistan\nDHS.Turkmenistan_ISO.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: ISO.Turkmenistan\nDHS.Turkmenistan
+  t: ISO.Asia\nDHS.Asia
+ISO.UnitedArabEmirates\nDHS.UnitedArabEmirates_ISO.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: ISO.UnitedArabEmirates\nDHS.UnitedArabEmirates
+  t: ISO.Asia\nDHS.Asia
+ISO.Uzbekistan\nDHS.Uzbekistan_ISO.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: ISO.Uzbekistan\nDHS.Uzbekistan
+  t: ISO.Asia\nDHS.Asia
+ISO.VietNam\nDHS.Vietnam_ISO.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: ISO.VietNam\nDHS.Vietnam
+  t: ISO.Asia\nDHS.Asia
+ISO.Yemen\nDHS.Yemen_ISO.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: ISO.Yemen\nDHS.Yemen
+  t: ISO.Asia\nDHS.Asia

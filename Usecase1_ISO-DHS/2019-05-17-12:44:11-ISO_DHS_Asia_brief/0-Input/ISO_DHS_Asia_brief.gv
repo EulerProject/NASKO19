@@ -1,0 +1,73 @@
+digraph{
+rankdir=LR
+node[shape=circle style=filled fillcolor="#FFFFFF"] 
+node[shape=box style=filled fillcolor="#CCFFCC" fontname="helvetica"] 
+"ISO.Asia"
+"ISO.HongKong"
+"ISO.AsiaOther"
+"ISO.Macao"
+"ISO.ChinaOther"
+"ISO.Taiwan"
+"ISO.VietNam"
+"ISO.China"
+node[shape=circle style=filled fillcolor="#FFFFFF"] 
+node[shape=note style=filled fillcolor="#FFFFCC" fontname="helvetica"] 
+"DHS.AsiaOther"
+"DHS.Macau"
+"DHS.China"
+"DHS.HongKong"
+"DHS.Vietnam"
+"DHS.Asia"
+"DHS.ChinaOther"
+"DHS.Taiwan"
+edge[style=solid color="#000000" constraint=true penwidth=1 dir=forward]
+edge[style=solid color="#000000" constraint=true penwidth=1 dir=forward]
+"DHS.ChinaOther" -> "DHS.Asia"
+"DHS.China" -> "DHS.Asia"
+"DHS.HongKong" -> "DHS.Asia"
+"DHS.AsiaOther" -> "DHS.Asia"
+"DHS.Vietnam" -> "DHS.Asia"
+"DHS.Macau" -> "DHS.Asia"
+"DHS.Taiwan" -> "DHS.Asia"
+edge[style=solid color="#000000" constraint=true penwidth=1 dir=forward]
+edge[style=solid color="#000000" constraint=true penwidth=1 dir=forward]
+"ISO.China" -> "ISO.Taiwan" [dir=back]
+"ISO.China" -> "ISO.HongKong" [dir=back]
+"ISO.China" -> "ISO.ChinaOther" [dir=back]
+"ISO.Asia" -> "ISO.VietNam" [dir=back]
+"ISO.China" -> "ISO.Macao" [dir=back]
+"ISO.Asia" -> "ISO.China" [dir=back]
+"ISO.Asia" -> "ISO.AsiaOther" [dir=back]
+edge[style=solid color="#000000" constraint=true penwidth=1 dir=forward]
+edge[style=dashed color="#AA00FF" constraint=true penwidth=2 dir=both]
+"ISO.Macao" -> "DHS.Macau" [label="="]
+"ISO.ChinaOther" -> "DHS.ChinaOther" [label="="]
+"ISO.HongKong" -> "DHS.HongKong" [label="="]
+"ISO.VietNam" -> "DHS.Vietnam" [label="="]
+"ISO.AsiaOther" -> "DHS.AsiaOther" [label="="]
+"ISO.Asia" -> "DHS.Asia" [label="="]
+node[shape=box] 
+{rank=source Legend [fillcolor= white margin=0 label=< 
+ <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4"> 
+<TR> <TD COLSPAN="2"><font face="Arial Black"> Nodes</font></TD> </TR> 
+<TR> 
+ <TD bgcolor="#CCFFCC" fontname="helvetica">ISO</TD> 
+ <TD>8</TD> 
+ </TR> 
+<TR> 
+ <TD bgcolor="#FFFFCC" fontname="helvetica">DHS</TD> 
+ <TD>8</TD> 
+ </TR> 
+<TR> <TD COLSPAN="2"><font face = "Arial Black"> Edges </font></TD> </TR> 
+<TR> 
+ <TD><font color ="#000000">is_a (DHS)</font></TD><TD>7</TD>
+</TR>
+<TR> 
+ <TD><font color ="#000000">is_a (ISO)</font></TD><TD>7</TD>
+</TR>
+<TR> 
+ <TD><font color ="#AA00FF">articulations</font></TD><TD>6</TD>
+</TR>
+</TABLE> 
+ >] } 
+}

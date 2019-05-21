@@ -1,0 +1,37 @@
+##### Executing command:
+
+/Users/jessicacheng/EulerX/src-el/euler2 align ISO_DHS_Asia_brief.txt -r clingo 
+
+
+##### Euler version:
+
+master
+49e63e6a27be97ab30832180a47d214494388e15
+
+
+##### GraphViz version:
+
+dot - graphviz version 2.36.0 (20140111.2315)
+
+
+##### DLV version:
+
+DLV [build BEN/Dec 17 2012   gcc 4.2.1 (Apple Inc. build 5666) (dot 3)]
+
+usage: dlv {FRONTEND} {OPTIONS} [filename [filename [...]]]
+
+Specify -help for more detailed usage information.
+
+
+##### Running User, Host and Date:
+User:	jessicacheng
+Host:	wirelessprv-10-195-175-58.near.illinois.edu
+Date:	2019-05-17-12:44:11
+
+
+##### Euler Outputs:
+******* You are running example ISO_DHS_Asia_brief *******
+
+Possible world 0:
+{ISO.Asia">"DHS.Macau, ISO.China">"DHS.Macau, ISO.Asia">"DHS.HongKong, ISO.China">"DHS.HongKong, ISO.Asia">"DHS.AsiaOther, ISO.Asia">"DHS.ChinaOther, ISO.China">"DHS.ChinaOther, ISO.Asia">"DHS.Vietnam, ISO.Asia">"DHS.China, ISO.China">"DHS.China, ISO.Taiwan">"DHS.China, ISO.Asia">"DHS.Taiwan, ISO.China">"DHS.Taiwan, ISO.Taiwan">"DHS.Taiwan, ISO.Asia"="DHS.Asia, ISO.Macao"="DHS.Macau, ISO.HongKong"="DHS.HongKong, ISO.AsiaOther"="DHS.AsiaOther, ISO.ChinaOther"="DHS.ChinaOther, ISO.VietNam"="DHS.Vietnam, ISO.HongKong"<"DHS.Asia, ISO.China"<"DHS.Asia, ISO.AsiaOther"<"DHS.Asia, ISO.ChinaOther"<"DHS.Asia, ISO.VietNam"<"DHS.Asia, ISO.Taiwan"<"DHS.Asia, ISO.Macao"<"DHS.Asia, ISO.HongKong"!"DHS.Macau, ISO.AsiaOther"!"DHS.Macau, ISO.ChinaOther"!"DHS.Macau, ISO.VietNam"!"DHS.Macau, ISO.Taiwan"!"DHS.Macau, ISO.AsiaOther"!"DHS.HongKong, ISO.ChinaOther"!"DHS.HongKong, ISO.VietNam"!"DHS.HongKong, ISO.Taiwan"!"DHS.HongKong, ISO.Macao"!"DHS.HongKong, ISO.HongKong"!"DHS.AsiaOther, ISO.China"!"DHS.AsiaOther, ISO.ChinaOther"!"DHS.AsiaOther, ISO.VietNam"!"DHS.AsiaOther, ISO.Taiwan"!"DHS.AsiaOther, ISO.Macao"!"DHS.AsiaOther, ISO.HongKong"!"DHS.ChinaOther, ISO.AsiaOther"!"DHS.ChinaOther, ISO.VietNam"!"DHS.ChinaOther, ISO.Taiwan"!"DHS.ChinaOther, ISO.Macao"!"DHS.ChinaOther, ISO.HongKong"!"DHS.Vietnam, ISO.China"!"DHS.Vietnam, ISO.AsiaOther"!"DHS.Vietnam, ISO.ChinaOther"!"DHS.Vietnam, ISO.Taiwan"!"DHS.Vietnam, ISO.Macao"!"DHS.Vietnam, ISO.HongKong"!"DHS.China, ISO.AsiaOther"!"DHS.China, ISO.ChinaOther"!"DHS.China, ISO.VietNam"!"DHS.China, ISO.Macao"!"DHS.China, ISO.HongKong"!"DHS.Taiwan, ISO.AsiaOther"!"DHS.Taiwan, ISO.ChinaOther"!"DHS.Taiwan, ISO.VietNam"!"DHS.Taiwan, ISO.Macao"!"DHS.Taiwan}
+

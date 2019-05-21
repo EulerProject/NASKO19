@@ -1,0 +1,518 @@
+%%% Euler regions
+r(1..55).
+
+%%% Concepts
+tax(tDHS,0).
+concept2(A, B) :- concept(A,B,_).
+concept(cDHS_Macau,0,0).
+concept(cDHS_HongKong,0,1).
+concept(cDHS_AsiaOther,0,2).
+concept2(cDHS_Asia,0).
+concept(cDHS_ChinaOther,0,3).
+concept(cDHS_Vietnam,0,4).
+concept(cDHS_China,0,5).
+concept(cDHS_Taiwan,0,6).
+tax(tISO,1).
+concept2(A, B) :- concept(A,B,_).
+concept(cISO_HongKong,1,0).
+concept(cISO_AsiaOther,1,1).
+concept2(cISO_Asia,1).
+concept(cISO_ChinaOther,1,2).
+concept(cISO_VietNam,1,3).
+concept2(cISO_China,1).
+concept(cISO_Taiwan,1,4).
+concept(cISO_Macao,1,5).
+%%% Euler Bit
+bit(M, 0, V):-r(M),M1=M/1, V = M1 \ 8.
+bit(M, 1, V):-r(M),M1=M/8, V = M1 \ 7.
+
+
+%%% Meaning of regions
+in(X, M) :- r(M),concept(X,T,N),N1=N+1,bit(M,T,N1).
+out(X, M) :- r(M),concept(X,T,N),N1=N+1,not bit(M,T,N1).
+in(X, M) :- r(M),concept2(X,_),not out(X, M).
+out(X, M) :- out3(X, M, _), ix.
+irs(M) :- in(X, M), out(X, M), r(M), concept2(X,_).
+
+%%% Constraints of regions.
+irs(X) :- ir(X, _).
+vrs(X) :- vr(X, _).
+vr(X, X) :- not irs(X), r(X).
+ir(X, X) :- not vrs(X), r(X), pw.
+ie(prod(A,B)) :- vr(X, A), ir(X, B), ix.
+:- vrs(X), irs(X), pw.
+
+%%% Inconsistency Explanation.
+ie(s(R, A, Y)) :- pie(R, A, Y), not cc(R, Y), ix.
+cc(R, Y) :- c(R, _, Y), ix.
+
+%%% Parent-Child relations
+%% ISA
+% cDHS_China isa cDHS_Asia
+ir(X, r0) :- in(cDHS_China, X), out(cDHS_Asia, X), pw.
+ir(X, prod(r0,R)) :- in(cDHS_China,X), out3(cDHS_Asia, X, R), ix.
+:- #count {X : vrs(X), in(cDHS_China,X), in(cDHS_Asia,X)} <= 0, pw.
+pie(r0, A, 1) :- ir(X, A), in(cDHS_China, X), in(cDHS_Asia, X), ix.
+c(r0, A, 1) :- vr(X, A), in(cDHS_China, X), in(cDHS_Asia, X), ix.
+
+% cDHS_ChinaOther isa cDHS_Asia
+ir(X, r1) :- in(cDHS_ChinaOther, X), out(cDHS_Asia, X), pw.
+ir(X, prod(r1,R)) :- in(cDHS_ChinaOther,X), out3(cDHS_Asia, X, R), ix.
+:- #count {X : vrs(X), in(cDHS_ChinaOther,X), in(cDHS_Asia,X)} <= 0, pw.
+pie(r1, A, 1) :- ir(X, A), in(cDHS_ChinaOther, X), in(cDHS_Asia, X), ix.
+c(r1, A, 1) :- vr(X, A), in(cDHS_ChinaOther, X), in(cDHS_Asia, X), ix.
+
+% cDHS_HongKong isa cDHS_Asia
+ir(X, r2) :- in(cDHS_HongKong, X), out(cDHS_Asia, X), pw.
+ir(X, prod(r2,R)) :- in(cDHS_HongKong,X), out3(cDHS_Asia, X, R), ix.
+:- #count {X : vrs(X), in(cDHS_HongKong,X), in(cDHS_Asia,X)} <= 0, pw.
+pie(r2, A, 1) :- ir(X, A), in(cDHS_HongKong, X), in(cDHS_Asia, X), ix.
+c(r2, A, 1) :- vr(X, A), in(cDHS_HongKong, X), in(cDHS_Asia, X), ix.
+
+% cDHS_Macau isa cDHS_Asia
+ir(X, r3) :- in(cDHS_Macau, X), out(cDHS_Asia, X), pw.
+ir(X, prod(r3,R)) :- in(cDHS_Macau,X), out3(cDHS_Asia, X, R), ix.
+:- #count {X : vrs(X), in(cDHS_Macau,X), in(cDHS_Asia,X)} <= 0, pw.
+pie(r3, A, 1) :- ir(X, A), in(cDHS_Macau, X), in(cDHS_Asia, X), ix.
+c(r3, A, 1) :- vr(X, A), in(cDHS_Macau, X), in(cDHS_Asia, X), ix.
+
+% cDHS_Taiwan isa cDHS_Asia
+ir(X, r4) :- in(cDHS_Taiwan, X), out(cDHS_Asia, X), pw.
+ir(X, prod(r4,R)) :- in(cDHS_Taiwan,X), out3(cDHS_Asia, X, R), ix.
+:- #count {X : vrs(X), in(cDHS_Taiwan,X), in(cDHS_Asia,X)} <= 0, pw.
+pie(r4, A, 1) :- ir(X, A), in(cDHS_Taiwan, X), in(cDHS_Asia, X), ix.
+c(r4, A, 1) :- vr(X, A), in(cDHS_Taiwan, X), in(cDHS_Asia, X), ix.
+
+% cDHS_Vietnam isa cDHS_Asia
+ir(X, r5) :- in(cDHS_Vietnam, X), out(cDHS_Asia, X), pw.
+ir(X, prod(r5,R)) :- in(cDHS_Vietnam,X), out3(cDHS_Asia, X, R), ix.
+:- #count {X : vrs(X), in(cDHS_Vietnam,X), in(cDHS_Asia,X)} <= 0, pw.
+pie(r5, A, 1) :- ir(X, A), in(cDHS_Vietnam, X), in(cDHS_Asia, X), ix.
+c(r5, A, 1) :- vr(X, A), in(cDHS_Vietnam, X), in(cDHS_Asia, X), ix.
+
+% cDHS_AsiaOther isa cDHS_Asia
+ir(X, r6) :- in(cDHS_AsiaOther, X), out(cDHS_Asia, X), pw.
+ir(X, prod(r6,R)) :- in(cDHS_AsiaOther,X), out3(cDHS_Asia, X, R), ix.
+:- #count {X : vrs(X), in(cDHS_AsiaOther,X), in(cDHS_Asia,X)} <= 0, pw.
+pie(r6, A, 1) :- ir(X, A), in(cDHS_AsiaOther, X), in(cDHS_Asia, X), ix.
+c(r6, A, 1) :- vr(X, A), in(cDHS_AsiaOther, X), in(cDHS_Asia, X), ix.
+
+%% coverage
+out3(cDHS_Asia, X, r7) :- out(cDHS_China, X), out(cDHS_ChinaOther, X), out(cDHS_HongKong, X), out(cDHS_Macau, X), out(cDHS_Taiwan, X), out(cDHS_Vietnam, X), out(cDHS_AsiaOther, X), ix.
+out(cDHS_Asia, X) :- out(cDHS_China, X), out(cDHS_ChinaOther, X), out(cDHS_HongKong, X), out(cDHS_Macau, X), out(cDHS_Taiwan, X), out(cDHS_Vietnam, X), out(cDHS_AsiaOther, X), pw.
+%% sibling disjointness
+% cDHS_China ! cDHS_ChinaOther
+ir(X, r8) :- in(cDHS_China, X), in(cDHS_ChinaOther, X).
+:- #count {X : vrs(X), in(cDHS_China,X), out(cDHS_ChinaOther,X)} <= 0, pw.
+:- #count {X : vrs(X), out(cDHS_China,X), in(cDHS_ChinaOther,X)} <= 0, pw.
+pie(r8, A, 1) :- ir(X, A), in(cDHS_China, X), out(cDHS_ChinaOther, X), ix.
+c(r8, A, 1) :- vr(X, A), in(cDHS_China, X), out(cDHS_ChinaOther, X), ix.
+pie(r8, A, 2) :- ir(X, A), out(cDHS_China, X), in(cDHS_ChinaOther, X), ix.
+c(r8, A, 2) :- vr(X, A), out(cDHS_China, X), in(cDHS_ChinaOther, X), ix.
+
+% cDHS_China ! cDHS_HongKong
+ir(X, r9) :- in(cDHS_China, X), in(cDHS_HongKong, X).
+:- #count {X : vrs(X), in(cDHS_China,X), out(cDHS_HongKong,X)} <= 0, pw.
+:- #count {X : vrs(X), out(cDHS_China,X), in(cDHS_HongKong,X)} <= 0, pw.
+pie(r9, A, 1) :- ir(X, A), in(cDHS_China, X), out(cDHS_HongKong, X), ix.
+c(r9, A, 1) :- vr(X, A), in(cDHS_China, X), out(cDHS_HongKong, X), ix.
+pie(r9, A, 2) :- ir(X, A), out(cDHS_China, X), in(cDHS_HongKong, X), ix.
+c(r9, A, 2) :- vr(X, A), out(cDHS_China, X), in(cDHS_HongKong, X), ix.
+
+% cDHS_China ! cDHS_Macau
+ir(X, r10) :- in(cDHS_China, X), in(cDHS_Macau, X).
+:- #count {X : vrs(X), in(cDHS_China,X), out(cDHS_Macau,X)} <= 0, pw.
+:- #count {X : vrs(X), out(cDHS_China,X), in(cDHS_Macau,X)} <= 0, pw.
+pie(r10, A, 1) :- ir(X, A), in(cDHS_China, X), out(cDHS_Macau, X), ix.
+c(r10, A, 1) :- vr(X, A), in(cDHS_China, X), out(cDHS_Macau, X), ix.
+pie(r10, A, 2) :- ir(X, A), out(cDHS_China, X), in(cDHS_Macau, X), ix.
+c(r10, A, 2) :- vr(X, A), out(cDHS_China, X), in(cDHS_Macau, X), ix.
+
+% cDHS_China ! cDHS_Taiwan
+ir(X, r11) :- in(cDHS_China, X), in(cDHS_Taiwan, X).
+:- #count {X : vrs(X), in(cDHS_China,X), out(cDHS_Taiwan,X)} <= 0, pw.
+:- #count {X : vrs(X), out(cDHS_China,X), in(cDHS_Taiwan,X)} <= 0, pw.
+pie(r11, A, 1) :- ir(X, A), in(cDHS_China, X), out(cDHS_Taiwan, X), ix.
+c(r11, A, 1) :- vr(X, A), in(cDHS_China, X), out(cDHS_Taiwan, X), ix.
+pie(r11, A, 2) :- ir(X, A), out(cDHS_China, X), in(cDHS_Taiwan, X), ix.
+c(r11, A, 2) :- vr(X, A), out(cDHS_China, X), in(cDHS_Taiwan, X), ix.
+
+% cDHS_China ! cDHS_Vietnam
+ir(X, r12) :- in(cDHS_China, X), in(cDHS_Vietnam, X).
+:- #count {X : vrs(X), in(cDHS_China,X), out(cDHS_Vietnam,X)} <= 0, pw.
+:- #count {X : vrs(X), out(cDHS_China,X), in(cDHS_Vietnam,X)} <= 0, pw.
+pie(r12, A, 1) :- ir(X, A), in(cDHS_China, X), out(cDHS_Vietnam, X), ix.
+c(r12, A, 1) :- vr(X, A), in(cDHS_China, X), out(cDHS_Vietnam, X), ix.
+pie(r12, A, 2) :- ir(X, A), out(cDHS_China, X), in(cDHS_Vietnam, X), ix.
+c(r12, A, 2) :- vr(X, A), out(cDHS_China, X), in(cDHS_Vietnam, X), ix.
+
+% cDHS_China ! cDHS_AsiaOther
+ir(X, r13) :- in(cDHS_China, X), in(cDHS_AsiaOther, X).
+:- #count {X : vrs(X), in(cDHS_China,X), out(cDHS_AsiaOther,X)} <= 0, pw.
+:- #count {X : vrs(X), out(cDHS_China,X), in(cDHS_AsiaOther,X)} <= 0, pw.
+pie(r13, A, 1) :- ir(X, A), in(cDHS_China, X), out(cDHS_AsiaOther, X), ix.
+c(r13, A, 1) :- vr(X, A), in(cDHS_China, X), out(cDHS_AsiaOther, X), ix.
+pie(r13, A, 2) :- ir(X, A), out(cDHS_China, X), in(cDHS_AsiaOther, X), ix.
+c(r13, A, 2) :- vr(X, A), out(cDHS_China, X), in(cDHS_AsiaOther, X), ix.
+
+% cDHS_ChinaOther ! cDHS_HongKong
+ir(X, r14) :- in(cDHS_ChinaOther, X), in(cDHS_HongKong, X).
+:- #count {X : vrs(X), in(cDHS_ChinaOther,X), out(cDHS_HongKong,X)} <= 0, pw.
+:- #count {X : vrs(X), out(cDHS_ChinaOther,X), in(cDHS_HongKong,X)} <= 0, pw.
+pie(r14, A, 1) :- ir(X, A), in(cDHS_ChinaOther, X), out(cDHS_HongKong, X), ix.
+c(r14, A, 1) :- vr(X, A), in(cDHS_ChinaOther, X), out(cDHS_HongKong, X), ix.
+pie(r14, A, 2) :- ir(X, A), out(cDHS_ChinaOther, X), in(cDHS_HongKong, X), ix.
+c(r14, A, 2) :- vr(X, A), out(cDHS_ChinaOther, X), in(cDHS_HongKong, X), ix.
+
+% cDHS_ChinaOther ! cDHS_Macau
+ir(X, r15) :- in(cDHS_ChinaOther, X), in(cDHS_Macau, X).
+:- #count {X : vrs(X), in(cDHS_ChinaOther,X), out(cDHS_Macau,X)} <= 0, pw.
+:- #count {X : vrs(X), out(cDHS_ChinaOther,X), in(cDHS_Macau,X)} <= 0, pw.
+pie(r15, A, 1) :- ir(X, A), in(cDHS_ChinaOther, X), out(cDHS_Macau, X), ix.
+c(r15, A, 1) :- vr(X, A), in(cDHS_ChinaOther, X), out(cDHS_Macau, X), ix.
+pie(r15, A, 2) :- ir(X, A), out(cDHS_ChinaOther, X), in(cDHS_Macau, X), ix.
+c(r15, A, 2) :- vr(X, A), out(cDHS_ChinaOther, X), in(cDHS_Macau, X), ix.
+
+% cDHS_ChinaOther ! cDHS_Taiwan
+ir(X, r16) :- in(cDHS_ChinaOther, X), in(cDHS_Taiwan, X).
+:- #count {X : vrs(X), in(cDHS_ChinaOther,X), out(cDHS_Taiwan,X)} <= 0, pw.
+:- #count {X : vrs(X), out(cDHS_ChinaOther,X), in(cDHS_Taiwan,X)} <= 0, pw.
+pie(r16, A, 1) :- ir(X, A), in(cDHS_ChinaOther, X), out(cDHS_Taiwan, X), ix.
+c(r16, A, 1) :- vr(X, A), in(cDHS_ChinaOther, X), out(cDHS_Taiwan, X), ix.
+pie(r16, A, 2) :- ir(X, A), out(cDHS_ChinaOther, X), in(cDHS_Taiwan, X), ix.
+c(r16, A, 2) :- vr(X, A), out(cDHS_ChinaOther, X), in(cDHS_Taiwan, X), ix.
+
+% cDHS_ChinaOther ! cDHS_Vietnam
+ir(X, r17) :- in(cDHS_ChinaOther, X), in(cDHS_Vietnam, X).
+:- #count {X : vrs(X), in(cDHS_ChinaOther,X), out(cDHS_Vietnam,X)} <= 0, pw.
+:- #count {X : vrs(X), out(cDHS_ChinaOther,X), in(cDHS_Vietnam,X)} <= 0, pw.
+pie(r17, A, 1) :- ir(X, A), in(cDHS_ChinaOther, X), out(cDHS_Vietnam, X), ix.
+c(r17, A, 1) :- vr(X, A), in(cDHS_ChinaOther, X), out(cDHS_Vietnam, X), ix.
+pie(r17, A, 2) :- ir(X, A), out(cDHS_ChinaOther, X), in(cDHS_Vietnam, X), ix.
+c(r17, A, 2) :- vr(X, A), out(cDHS_ChinaOther, X), in(cDHS_Vietnam, X), ix.
+
+% cDHS_ChinaOther ! cDHS_AsiaOther
+ir(X, r18) :- in(cDHS_ChinaOther, X), in(cDHS_AsiaOther, X).
+:- #count {X : vrs(X), in(cDHS_ChinaOther,X), out(cDHS_AsiaOther,X)} <= 0, pw.
+:- #count {X : vrs(X), out(cDHS_ChinaOther,X), in(cDHS_AsiaOther,X)} <= 0, pw.
+pie(r18, A, 1) :- ir(X, A), in(cDHS_ChinaOther, X), out(cDHS_AsiaOther, X), ix.
+c(r18, A, 1) :- vr(X, A), in(cDHS_ChinaOther, X), out(cDHS_AsiaOther, X), ix.
+pie(r18, A, 2) :- ir(X, A), out(cDHS_ChinaOther, X), in(cDHS_AsiaOther, X), ix.
+c(r18, A, 2) :- vr(X, A), out(cDHS_ChinaOther, X), in(cDHS_AsiaOther, X), ix.
+
+% cDHS_HongKong ! cDHS_Macau
+ir(X, r19) :- in(cDHS_HongKong, X), in(cDHS_Macau, X).
+:- #count {X : vrs(X), in(cDHS_HongKong,X), out(cDHS_Macau,X)} <= 0, pw.
+:- #count {X : vrs(X), out(cDHS_HongKong,X), in(cDHS_Macau,X)} <= 0, pw.
+pie(r19, A, 1) :- ir(X, A), in(cDHS_HongKong, X), out(cDHS_Macau, X), ix.
+c(r19, A, 1) :- vr(X, A), in(cDHS_HongKong, X), out(cDHS_Macau, X), ix.
+pie(r19, A, 2) :- ir(X, A), out(cDHS_HongKong, X), in(cDHS_Macau, X), ix.
+c(r19, A, 2) :- vr(X, A), out(cDHS_HongKong, X), in(cDHS_Macau, X), ix.
+
+% cDHS_HongKong ! cDHS_Taiwan
+ir(X, r20) :- in(cDHS_HongKong, X), in(cDHS_Taiwan, X).
+:- #count {X : vrs(X), in(cDHS_HongKong,X), out(cDHS_Taiwan,X)} <= 0, pw.
+:- #count {X : vrs(X), out(cDHS_HongKong,X), in(cDHS_Taiwan,X)} <= 0, pw.
+pie(r20, A, 1) :- ir(X, A), in(cDHS_HongKong, X), out(cDHS_Taiwan, X), ix.
+c(r20, A, 1) :- vr(X, A), in(cDHS_HongKong, X), out(cDHS_Taiwan, X), ix.
+pie(r20, A, 2) :- ir(X, A), out(cDHS_HongKong, X), in(cDHS_Taiwan, X), ix.
+c(r20, A, 2) :- vr(X, A), out(cDHS_HongKong, X), in(cDHS_Taiwan, X), ix.
+
+% cDHS_HongKong ! cDHS_Vietnam
+ir(X, r21) :- in(cDHS_HongKong, X), in(cDHS_Vietnam, X).
+:- #count {X : vrs(X), in(cDHS_HongKong,X), out(cDHS_Vietnam,X)} <= 0, pw.
+:- #count {X : vrs(X), out(cDHS_HongKong,X), in(cDHS_Vietnam,X)} <= 0, pw.
+pie(r21, A, 1) :- ir(X, A), in(cDHS_HongKong, X), out(cDHS_Vietnam, X), ix.
+c(r21, A, 1) :- vr(X, A), in(cDHS_HongKong, X), out(cDHS_Vietnam, X), ix.
+pie(r21, A, 2) :- ir(X, A), out(cDHS_HongKong, X), in(cDHS_Vietnam, X), ix.
+c(r21, A, 2) :- vr(X, A), out(cDHS_HongKong, X), in(cDHS_Vietnam, X), ix.
+
+% cDHS_HongKong ! cDHS_AsiaOther
+ir(X, r22) :- in(cDHS_HongKong, X), in(cDHS_AsiaOther, X).
+:- #count {X : vrs(X), in(cDHS_HongKong,X), out(cDHS_AsiaOther,X)} <= 0, pw.
+:- #count {X : vrs(X), out(cDHS_HongKong,X), in(cDHS_AsiaOther,X)} <= 0, pw.
+pie(r22, A, 1) :- ir(X, A), in(cDHS_HongKong, X), out(cDHS_AsiaOther, X), ix.
+c(r22, A, 1) :- vr(X, A), in(cDHS_HongKong, X), out(cDHS_AsiaOther, X), ix.
+pie(r22, A, 2) :- ir(X, A), out(cDHS_HongKong, X), in(cDHS_AsiaOther, X), ix.
+c(r22, A, 2) :- vr(X, A), out(cDHS_HongKong, X), in(cDHS_AsiaOther, X), ix.
+
+% cDHS_Macau ! cDHS_Taiwan
+ir(X, r23) :- in(cDHS_Macau, X), in(cDHS_Taiwan, X).
+:- #count {X : vrs(X), in(cDHS_Macau,X), out(cDHS_Taiwan,X)} <= 0, pw.
+:- #count {X : vrs(X), out(cDHS_Macau,X), in(cDHS_Taiwan,X)} <= 0, pw.
+pie(r23, A, 1) :- ir(X, A), in(cDHS_Macau, X), out(cDHS_Taiwan, X), ix.
+c(r23, A, 1) :- vr(X, A), in(cDHS_Macau, X), out(cDHS_Taiwan, X), ix.
+pie(r23, A, 2) :- ir(X, A), out(cDHS_Macau, X), in(cDHS_Taiwan, X), ix.
+c(r23, A, 2) :- vr(X, A), out(cDHS_Macau, X), in(cDHS_Taiwan, X), ix.
+
+% cDHS_Macau ! cDHS_Vietnam
+ir(X, r24) :- in(cDHS_Macau, X), in(cDHS_Vietnam, X).
+:- #count {X : vrs(X), in(cDHS_Macau,X), out(cDHS_Vietnam,X)} <= 0, pw.
+:- #count {X : vrs(X), out(cDHS_Macau,X), in(cDHS_Vietnam,X)} <= 0, pw.
+pie(r24, A, 1) :- ir(X, A), in(cDHS_Macau, X), out(cDHS_Vietnam, X), ix.
+c(r24, A, 1) :- vr(X, A), in(cDHS_Macau, X), out(cDHS_Vietnam, X), ix.
+pie(r24, A, 2) :- ir(X, A), out(cDHS_Macau, X), in(cDHS_Vietnam, X), ix.
+c(r24, A, 2) :- vr(X, A), out(cDHS_Macau, X), in(cDHS_Vietnam, X), ix.
+
+% cDHS_Macau ! cDHS_AsiaOther
+ir(X, r25) :- in(cDHS_Macau, X), in(cDHS_AsiaOther, X).
+:- #count {X : vrs(X), in(cDHS_Macau,X), out(cDHS_AsiaOther,X)} <= 0, pw.
+:- #count {X : vrs(X), out(cDHS_Macau,X), in(cDHS_AsiaOther,X)} <= 0, pw.
+pie(r25, A, 1) :- ir(X, A), in(cDHS_Macau, X), out(cDHS_AsiaOther, X), ix.
+c(r25, A, 1) :- vr(X, A), in(cDHS_Macau, X), out(cDHS_AsiaOther, X), ix.
+pie(r25, A, 2) :- ir(X, A), out(cDHS_Macau, X), in(cDHS_AsiaOther, X), ix.
+c(r25, A, 2) :- vr(X, A), out(cDHS_Macau, X), in(cDHS_AsiaOther, X), ix.
+
+% cDHS_Taiwan ! cDHS_Vietnam
+ir(X, r26) :- in(cDHS_Taiwan, X), in(cDHS_Vietnam, X).
+:- #count {X : vrs(X), in(cDHS_Taiwan,X), out(cDHS_Vietnam,X)} <= 0, pw.
+:- #count {X : vrs(X), out(cDHS_Taiwan,X), in(cDHS_Vietnam,X)} <= 0, pw.
+pie(r26, A, 1) :- ir(X, A), in(cDHS_Taiwan, X), out(cDHS_Vietnam, X), ix.
+c(r26, A, 1) :- vr(X, A), in(cDHS_Taiwan, X), out(cDHS_Vietnam, X), ix.
+pie(r26, A, 2) :- ir(X, A), out(cDHS_Taiwan, X), in(cDHS_Vietnam, X), ix.
+c(r26, A, 2) :- vr(X, A), out(cDHS_Taiwan, X), in(cDHS_Vietnam, X), ix.
+
+% cDHS_Taiwan ! cDHS_AsiaOther
+ir(X, r27) :- in(cDHS_Taiwan, X), in(cDHS_AsiaOther, X).
+:- #count {X : vrs(X), in(cDHS_Taiwan,X), out(cDHS_AsiaOther,X)} <= 0, pw.
+:- #count {X : vrs(X), out(cDHS_Taiwan,X), in(cDHS_AsiaOther,X)} <= 0, pw.
+pie(r27, A, 1) :- ir(X, A), in(cDHS_Taiwan, X), out(cDHS_AsiaOther, X), ix.
+c(r27, A, 1) :- vr(X, A), in(cDHS_Taiwan, X), out(cDHS_AsiaOther, X), ix.
+pie(r27, A, 2) :- ir(X, A), out(cDHS_Taiwan, X), in(cDHS_AsiaOther, X), ix.
+c(r27, A, 2) :- vr(X, A), out(cDHS_Taiwan, X), in(cDHS_AsiaOther, X), ix.
+
+% cDHS_Vietnam ! cDHS_AsiaOther
+ir(X, r28) :- in(cDHS_Vietnam, X), in(cDHS_AsiaOther, X).
+:- #count {X : vrs(X), in(cDHS_Vietnam,X), out(cDHS_AsiaOther,X)} <= 0, pw.
+:- #count {X : vrs(X), out(cDHS_Vietnam,X), in(cDHS_AsiaOther,X)} <= 0, pw.
+pie(r28, A, 1) :- ir(X, A), in(cDHS_Vietnam, X), out(cDHS_AsiaOther, X), ix.
+c(r28, A, 1) :- vr(X, A), in(cDHS_Vietnam, X), out(cDHS_AsiaOther, X), ix.
+pie(r28, A, 2) :- ir(X, A), out(cDHS_Vietnam, X), in(cDHS_AsiaOther, X), ix.
+c(r28, A, 2) :- vr(X, A), out(cDHS_Vietnam, X), in(cDHS_AsiaOther, X), ix.
+
+%% ISA
+% cISO_China isa cISO_Asia
+ir(X, r29) :- in(cISO_China, X), out(cISO_Asia, X), pw.
+ir(X, prod(r29,R)) :- in(cISO_China,X), out3(cISO_Asia, X, R), ix.
+:- #count {X : vrs(X), in(cISO_China,X), in(cISO_Asia,X)} <= 0, pw.
+pie(r29, A, 1) :- ir(X, A), in(cISO_China, X), in(cISO_Asia, X), ix.
+c(r29, A, 1) :- vr(X, A), in(cISO_China, X), in(cISO_Asia, X), ix.
+
+% cISO_VietNam isa cISO_Asia
+ir(X, r30) :- in(cISO_VietNam, X), out(cISO_Asia, X), pw.
+ir(X, prod(r30,R)) :- in(cISO_VietNam,X), out3(cISO_Asia, X, R), ix.
+:- #count {X : vrs(X), in(cISO_VietNam,X), in(cISO_Asia,X)} <= 0, pw.
+pie(r30, A, 1) :- ir(X, A), in(cISO_VietNam, X), in(cISO_Asia, X), ix.
+c(r30, A, 1) :- vr(X, A), in(cISO_VietNam, X), in(cISO_Asia, X), ix.
+
+% cISO_AsiaOther isa cISO_Asia
+ir(X, r31) :- in(cISO_AsiaOther, X), out(cISO_Asia, X), pw.
+ir(X, prod(r31,R)) :- in(cISO_AsiaOther,X), out3(cISO_Asia, X, R), ix.
+:- #count {X : vrs(X), in(cISO_AsiaOther,X), in(cISO_Asia,X)} <= 0, pw.
+pie(r31, A, 1) :- ir(X, A), in(cISO_AsiaOther, X), in(cISO_Asia, X), ix.
+c(r31, A, 1) :- vr(X, A), in(cISO_AsiaOther, X), in(cISO_Asia, X), ix.
+
+%% coverage
+out3(cISO_Asia, X, r32) :- out(cISO_China, X), out(cISO_VietNam, X), out(cISO_AsiaOther, X), ix.
+out(cISO_Asia, X) :- out(cISO_China, X), out(cISO_VietNam, X), out(cISO_AsiaOther, X), pw.
+%% sibling disjointness
+% cISO_China ! cISO_VietNam
+ir(X, r33) :- in(cISO_China, X), in(cISO_VietNam, X).
+:- #count {X : vrs(X), in(cISO_China,X), out(cISO_VietNam,X)} <= 0, pw.
+:- #count {X : vrs(X), out(cISO_China,X), in(cISO_VietNam,X)} <= 0, pw.
+pie(r33, A, 1) :- ir(X, A), in(cISO_China, X), out(cISO_VietNam, X), ix.
+c(r33, A, 1) :- vr(X, A), in(cISO_China, X), out(cISO_VietNam, X), ix.
+pie(r33, A, 2) :- ir(X, A), out(cISO_China, X), in(cISO_VietNam, X), ix.
+c(r33, A, 2) :- vr(X, A), out(cISO_China, X), in(cISO_VietNam, X), ix.
+
+% cISO_China ! cISO_AsiaOther
+ir(X, r34) :- in(cISO_China, X), in(cISO_AsiaOther, X).
+:- #count {X : vrs(X), in(cISO_China,X), out(cISO_AsiaOther,X)} <= 0, pw.
+:- #count {X : vrs(X), out(cISO_China,X), in(cISO_AsiaOther,X)} <= 0, pw.
+pie(r34, A, 1) :- ir(X, A), in(cISO_China, X), out(cISO_AsiaOther, X), ix.
+c(r34, A, 1) :- vr(X, A), in(cISO_China, X), out(cISO_AsiaOther, X), ix.
+pie(r34, A, 2) :- ir(X, A), out(cISO_China, X), in(cISO_AsiaOther, X), ix.
+c(r34, A, 2) :- vr(X, A), out(cISO_China, X), in(cISO_AsiaOther, X), ix.
+
+% cISO_VietNam ! cISO_AsiaOther
+ir(X, r35) :- in(cISO_VietNam, X), in(cISO_AsiaOther, X).
+:- #count {X : vrs(X), in(cISO_VietNam,X), out(cISO_AsiaOther,X)} <= 0, pw.
+:- #count {X : vrs(X), out(cISO_VietNam,X), in(cISO_AsiaOther,X)} <= 0, pw.
+pie(r35, A, 1) :- ir(X, A), in(cISO_VietNam, X), out(cISO_AsiaOther, X), ix.
+c(r35, A, 1) :- vr(X, A), in(cISO_VietNam, X), out(cISO_AsiaOther, X), ix.
+pie(r35, A, 2) :- ir(X, A), out(cISO_VietNam, X), in(cISO_AsiaOther, X), ix.
+c(r35, A, 2) :- vr(X, A), out(cISO_VietNam, X), in(cISO_AsiaOther, X), ix.
+
+%% ISA
+% cISO_HongKong isa cISO_China
+ir(X, r36) :- in(cISO_HongKong, X), out(cISO_China, X), pw.
+ir(X, prod(r36,R)) :- in(cISO_HongKong,X), out3(cISO_China, X, R), ix.
+:- #count {X : vrs(X), in(cISO_HongKong,X), in(cISO_China,X)} <= 0, pw.
+pie(r36, A, 1) :- ir(X, A), in(cISO_HongKong, X), in(cISO_China, X), ix.
+c(r36, A, 1) :- vr(X, A), in(cISO_HongKong, X), in(cISO_China, X), ix.
+
+% cISO_Macao isa cISO_China
+ir(X, r37) :- in(cISO_Macao, X), out(cISO_China, X), pw.
+ir(X, prod(r37,R)) :- in(cISO_Macao,X), out3(cISO_China, X, R), ix.
+:- #count {X : vrs(X), in(cISO_Macao,X), in(cISO_China,X)} <= 0, pw.
+pie(r37, A, 1) :- ir(X, A), in(cISO_Macao, X), in(cISO_China, X), ix.
+c(r37, A, 1) :- vr(X, A), in(cISO_Macao, X), in(cISO_China, X), ix.
+
+% cISO_Taiwan isa cISO_China
+ir(X, r38) :- in(cISO_Taiwan, X), out(cISO_China, X), pw.
+ir(X, prod(r38,R)) :- in(cISO_Taiwan,X), out3(cISO_China, X, R), ix.
+:- #count {X : vrs(X), in(cISO_Taiwan,X), in(cISO_China,X)} <= 0, pw.
+pie(r38, A, 1) :- ir(X, A), in(cISO_Taiwan, X), in(cISO_China, X), ix.
+c(r38, A, 1) :- vr(X, A), in(cISO_Taiwan, X), in(cISO_China, X), ix.
+
+% cISO_ChinaOther isa cISO_China
+ir(X, r39) :- in(cISO_ChinaOther, X), out(cISO_China, X), pw.
+ir(X, prod(r39,R)) :- in(cISO_ChinaOther,X), out3(cISO_China, X, R), ix.
+:- #count {X : vrs(X), in(cISO_ChinaOther,X), in(cISO_China,X)} <= 0, pw.
+pie(r39, A, 1) :- ir(X, A), in(cISO_ChinaOther, X), in(cISO_China, X), ix.
+c(r39, A, 1) :- vr(X, A), in(cISO_ChinaOther, X), in(cISO_China, X), ix.
+
+%% coverage
+out3(cISO_China, X, r40) :- out(cISO_HongKong, X), out(cISO_Macao, X), out(cISO_Taiwan, X), out(cISO_ChinaOther, X), ix.
+out(cISO_China, X) :- out(cISO_HongKong, X), out(cISO_Macao, X), out(cISO_Taiwan, X), out(cISO_ChinaOther, X), pw.
+%% sibling disjointness
+% cISO_HongKong ! cISO_Macao
+ir(X, r41) :- in(cISO_HongKong, X), in(cISO_Macao, X).
+:- #count {X : vrs(X), in(cISO_HongKong,X), out(cISO_Macao,X)} <= 0, pw.
+:- #count {X : vrs(X), out(cISO_HongKong,X), in(cISO_Macao,X)} <= 0, pw.
+pie(r41, A, 1) :- ir(X, A), in(cISO_HongKong, X), out(cISO_Macao, X), ix.
+c(r41, A, 1) :- vr(X, A), in(cISO_HongKong, X), out(cISO_Macao, X), ix.
+pie(r41, A, 2) :- ir(X, A), out(cISO_HongKong, X), in(cISO_Macao, X), ix.
+c(r41, A, 2) :- vr(X, A), out(cISO_HongKong, X), in(cISO_Macao, X), ix.
+
+% cISO_HongKong ! cISO_Taiwan
+ir(X, r42) :- in(cISO_HongKong, X), in(cISO_Taiwan, X).
+:- #count {X : vrs(X), in(cISO_HongKong,X), out(cISO_Taiwan,X)} <= 0, pw.
+:- #count {X : vrs(X), out(cISO_HongKong,X), in(cISO_Taiwan,X)} <= 0, pw.
+pie(r42, A, 1) :- ir(X, A), in(cISO_HongKong, X), out(cISO_Taiwan, X), ix.
+c(r42, A, 1) :- vr(X, A), in(cISO_HongKong, X), out(cISO_Taiwan, X), ix.
+pie(r42, A, 2) :- ir(X, A), out(cISO_HongKong, X), in(cISO_Taiwan, X), ix.
+c(r42, A, 2) :- vr(X, A), out(cISO_HongKong, X), in(cISO_Taiwan, X), ix.
+
+% cISO_HongKong ! cISO_ChinaOther
+ir(X, r43) :- in(cISO_HongKong, X), in(cISO_ChinaOther, X).
+:- #count {X : vrs(X), in(cISO_HongKong,X), out(cISO_ChinaOther,X)} <= 0, pw.
+:- #count {X : vrs(X), out(cISO_HongKong,X), in(cISO_ChinaOther,X)} <= 0, pw.
+pie(r43, A, 1) :- ir(X, A), in(cISO_HongKong, X), out(cISO_ChinaOther, X), ix.
+c(r43, A, 1) :- vr(X, A), in(cISO_HongKong, X), out(cISO_ChinaOther, X), ix.
+pie(r43, A, 2) :- ir(X, A), out(cISO_HongKong, X), in(cISO_ChinaOther, X), ix.
+c(r43, A, 2) :- vr(X, A), out(cISO_HongKong, X), in(cISO_ChinaOther, X), ix.
+
+% cISO_Macao ! cISO_Taiwan
+ir(X, r44) :- in(cISO_Macao, X), in(cISO_Taiwan, X).
+:- #count {X : vrs(X), in(cISO_Macao,X), out(cISO_Taiwan,X)} <= 0, pw.
+:- #count {X : vrs(X), out(cISO_Macao,X), in(cISO_Taiwan,X)} <= 0, pw.
+pie(r44, A, 1) :- ir(X, A), in(cISO_Macao, X), out(cISO_Taiwan, X), ix.
+c(r44, A, 1) :- vr(X, A), in(cISO_Macao, X), out(cISO_Taiwan, X), ix.
+pie(r44, A, 2) :- ir(X, A), out(cISO_Macao, X), in(cISO_Taiwan, X), ix.
+c(r44, A, 2) :- vr(X, A), out(cISO_Macao, X), in(cISO_Taiwan, X), ix.
+
+% cISO_Macao ! cISO_ChinaOther
+ir(X, r45) :- in(cISO_Macao, X), in(cISO_ChinaOther, X).
+:- #count {X : vrs(X), in(cISO_Macao,X), out(cISO_ChinaOther,X)} <= 0, pw.
+:- #count {X : vrs(X), out(cISO_Macao,X), in(cISO_ChinaOther,X)} <= 0, pw.
+pie(r45, A, 1) :- ir(X, A), in(cISO_Macao, X), out(cISO_ChinaOther, X), ix.
+c(r45, A, 1) :- vr(X, A), in(cISO_Macao, X), out(cISO_ChinaOther, X), ix.
+pie(r45, A, 2) :- ir(X, A), out(cISO_Macao, X), in(cISO_ChinaOther, X), ix.
+c(r45, A, 2) :- vr(X, A), out(cISO_Macao, X), in(cISO_ChinaOther, X), ix.
+
+% cISO_Taiwan ! cISO_ChinaOther
+ir(X, r46) :- in(cISO_Taiwan, X), in(cISO_ChinaOther, X).
+:- #count {X : vrs(X), in(cISO_Taiwan,X), out(cISO_ChinaOther,X)} <= 0, pw.
+:- #count {X : vrs(X), out(cISO_Taiwan,X), in(cISO_ChinaOther,X)} <= 0, pw.
+pie(r46, A, 1) :- ir(X, A), in(cISO_Taiwan, X), out(cISO_ChinaOther, X), ix.
+c(r46, A, 1) :- vr(X, A), in(cISO_Taiwan, X), out(cISO_ChinaOther, X), ix.
+pie(r46, A, 2) :- ir(X, A), out(cISO_Taiwan, X), in(cISO_ChinaOther, X), ix.
+c(r46, A, 2) :- vr(X, A), out(cISO_Taiwan, X), in(cISO_ChinaOther, X), ix.
+
+
+%%% Articulations
+% ISO.Asia equals DHS.Asia
+ir(X, r47) :- out(cISO_Asia,X), in(cDHS_Asia,X).
+ir(X, r47) :- in(cISO_Asia,X), out(cDHS_Asia,X).
+ir(X, prod(r47,R)) :- out3(cISO_Asia, X, R), in(cDHS_Asia,X), ix.
+ir(X, prod(r47,R)) :- in(cISO_Asia,X), out3(cDHS_Asia, X, R), ix.
+:- #count {X : vrs(X), in(cISO_Asia,X), in(cDHS_Asia,X)} <= 0, pw.
+pie(r47, A, 1) :- ir(X, A), in(cISO_Asia, X), in(cDHS_Asia, X), ix.
+c(r47, A, 1) :- vr(X, A), in(cISO_Asia, X), in(cDHS_Asia, X), ix.
+
+
+% ISO.HongKong equals DHS.HongKong
+ir(X, r48) :- out(cISO_HongKong,X), in(cDHS_HongKong,X).
+ir(X, r48) :- in(cISO_HongKong,X), out(cDHS_HongKong,X).
+ir(X, prod(r48,R)) :- out3(cISO_HongKong, X, R), in(cDHS_HongKong,X), ix.
+ir(X, prod(r48,R)) :- in(cISO_HongKong,X), out3(cDHS_HongKong, X, R), ix.
+:- #count {X : vrs(X), in(cISO_HongKong,X), in(cDHS_HongKong,X)} <= 0, pw.
+pie(r48, A, 1) :- ir(X, A), in(cISO_HongKong, X), in(cDHS_HongKong, X), ix.
+c(r48, A, 1) :- vr(X, A), in(cISO_HongKong, X), in(cDHS_HongKong, X), ix.
+
+
+% ISO.Macao equals DHS.Macau
+ir(X, r49) :- out(cISO_Macao,X), in(cDHS_Macau,X).
+ir(X, r49) :- in(cISO_Macao,X), out(cDHS_Macau,X).
+ir(X, prod(r49,R)) :- out3(cISO_Macao, X, R), in(cDHS_Macau,X), ix.
+ir(X, prod(r49,R)) :- in(cISO_Macao,X), out3(cDHS_Macau, X, R), ix.
+:- #count {X : vrs(X), in(cISO_Macao,X), in(cDHS_Macau,X)} <= 0, pw.
+pie(r49, A, 1) :- ir(X, A), in(cISO_Macao, X), in(cDHS_Macau, X), ix.
+c(r49, A, 1) :- vr(X, A), in(cISO_Macao, X), in(cDHS_Macau, X), ix.
+
+
+% ISO.ChinaOther equals DHS.ChinaOther
+ir(X, r50) :- out(cISO_ChinaOther,X), in(cDHS_ChinaOther,X).
+ir(X, r50) :- in(cISO_ChinaOther,X), out(cDHS_ChinaOther,X).
+ir(X, prod(r50,R)) :- out3(cISO_ChinaOther, X, R), in(cDHS_ChinaOther,X), ix.
+ir(X, prod(r50,R)) :- in(cISO_ChinaOther,X), out3(cDHS_ChinaOther, X, R), ix.
+:- #count {X : vrs(X), in(cISO_ChinaOther,X), in(cDHS_ChinaOther,X)} <= 0, pw.
+pie(r50, A, 1) :- ir(X, A), in(cISO_ChinaOther, X), in(cDHS_ChinaOther, X), ix.
+c(r50, A, 1) :- vr(X, A), in(cISO_ChinaOther, X), in(cDHS_ChinaOther, X), ix.
+
+
+% ISO.VietNam equals DHS.Vietnam
+ir(X, r51) :- out(cISO_VietNam,X), in(cDHS_Vietnam,X).
+ir(X, r51) :- in(cISO_VietNam,X), out(cDHS_Vietnam,X).
+ir(X, prod(r51,R)) :- out3(cISO_VietNam, X, R), in(cDHS_Vietnam,X), ix.
+ir(X, prod(r51,R)) :- in(cISO_VietNam,X), out3(cDHS_Vietnam, X, R), ix.
+:- #count {X : vrs(X), in(cISO_VietNam,X), in(cDHS_Vietnam,X)} <= 0, pw.
+pie(r51, A, 1) :- ir(X, A), in(cISO_VietNam, X), in(cDHS_Vietnam, X), ix.
+c(r51, A, 1) :- vr(X, A), in(cISO_VietNam, X), in(cDHS_Vietnam, X), ix.
+
+
+% ISO.AsiaOther equals DHS.AsiaOther
+ir(X, r52) :- out(cISO_AsiaOther,X), in(cDHS_AsiaOther,X).
+ir(X, r52) :- in(cISO_AsiaOther,X), out(cDHS_AsiaOther,X).
+ir(X, prod(r52,R)) :- out3(cISO_AsiaOther, X, R), in(cDHS_AsiaOther,X), ix.
+ir(X, prod(r52,R)) :- in(cISO_AsiaOther,X), out3(cDHS_AsiaOther, X, R), ix.
+:- #count {X : vrs(X), in(cISO_AsiaOther,X), in(cDHS_AsiaOther,X)} <= 0, pw.
+pie(r52, A, 1) :- ir(X, A), in(cISO_AsiaOther, X), in(cDHS_AsiaOther, X), ix.
+c(r52, A, 1) :- vr(X, A), in(cISO_AsiaOther, X), in(cDHS_AsiaOther, X), ix.
+
+
+%%% Decoding now
+:- rel(X, Y, "="), rel(X, Y, "<"), concept2(X, N1), concept2(Y, N2), pw.
+:- rel(X, Y, "="), rel(X, Y, ">"), concept2(X, N1), concept2(Y, N2), pw.
+:- rel(X, Y, "="), rel(X, Y, "><"), concept2(X, N1), concept2(Y, N2), pw.
+:- rel(X, Y, "="), rel(X, Y, "!"), concept2(X, N1), concept2(Y, N2), pw.
+:- rel(X, Y, "<"), rel(X, Y, ">"), concept2(X, N1), concept2(Y, N2), pw.
+:- rel(X, Y, "<"), rel(X, Y, "><"), concept2(X, N1), concept2(Y, N2), pw.
+:- rel(X, Y, "<"), rel(X, Y, "!"), concept2(X, N1), concept2(Y, N2), pw.
+:- rel(X, Y, ">"), rel(X, Y, "><"), concept2(X, N1), concept2(Y, N2), pw.
+:- rel(X, Y, ">"), rel(X, Y, "!"), concept2(X, N1), concept2(Y, N2), pw.
+:- rel(X, Y, "><"), rel(X, Y, "!"), concept2(X, N1), concept2(Y, N2), pw.
+:- not rel(X, Y, "="), not rel(X, Y, "<"), not rel(X, Y, ">"), not rel(X, Y, "><"), not rel(X, Y, "!"), concept2(X, N1), concept2(Y, N2), N1 < N2, not ncf(X), not ncf(Y), pw.
+
+rel(X, Y, "=") :- not hint(X, Y, 0), hint(X, Y, 1), not hint(X, Y, 2), pw.
+rel(X, Y, "<") :- not hint(X, Y, 0), hint(X, Y, 1), hint(X, Y, 2), pw.
+rel(X, Y, ">") :- hint(X, Y, 0), hint(X, Y, 1), not hint(X, Y, 2), pw.
+rel(X, Y, "><") :- hint(X, Y, 0), hint(X, Y, 1), hint(X, Y, 2), pw.
+rel(X, Y, "!") :- hint(X, Y, 0), not hint(X, Y, 1), hint(X, Y, 2), pw.
+
+
+hint(X, Y, 0) :- concept2(X, N1), concept2(Y, N2), N1 < N2, vrs(R), in(X, R), out(Y, R), not ncf(X), not ncf(Y), pw.
+hint(X, Y, 1) :- concept2(X, N1), concept2(Y, N2), N1 < N2, vrs(R), in(X, R), in(Y, R), not ncf(X), not ncf(Y), pw.
+hint(X, Y, 2) :- concept2(X, N1), concept2(Y, N2), N1 < N2, vrs(R), out(X, R), in(Y, R), not ncf(X), not ncf(Y), pw.
+

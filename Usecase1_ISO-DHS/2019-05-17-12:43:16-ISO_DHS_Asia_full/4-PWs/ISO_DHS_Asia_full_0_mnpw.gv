@@ -1,0 +1,137 @@
+digraph{
+rankdir=RL
+node[shape=box style=filled fillcolor="#CCFFCC" fontname="helvetica"] 
+"ISO.TaiwanProvinceofChina"
+"ISO.China"
+node[shape=box style="filled,rounded" fillcolor="#EEEEEE" fontname="helvetica"] 
+"ISO.Cambodia\nDHS.Cambodia"
+"ISO.VietNam\nDHS.Vietnam"
+"ISO.Philippines\nDHS.Philippines"
+"ISO.Uzbekistan\nDHS.Uzbekistan"
+"ISO.KoreaRepublicof\nDHS.SouthKorea"
+"ISO.Myanmar\nDHS.Burma"
+"ISO.Jordan\nDHS.Jordan"
+"ISO.Afghanistan\nDHS.Afghanistan"
+"ISO.Japan\nDHS.Japan"
+"ISO.Asia\nDHS.Asia"
+"ISO.Azerbaijan\nDHS.Azerbaijan"
+"ISO.Armenia\nDHS.Armenia"
+"ISO.Nepal\nDHS.Nepal"
+"ISO.Cyprus\nDHS.Cyprus"
+"ISO.BruneiDarussalam\nDHS.Brunei"
+"ISO.Lebanon\nDHS.Lebanon"
+"ISO.KazakDHStan\nDHS.KazakDHStan"
+"ISO.Israel\nDHS.Israel"
+"ISO.IranIslamicRepublicof\nDHS.Iran"
+"ISO.TimorLeste\nDHS.EastTimor"
+"ISO.Bahrain\nDHS.Bahrain"
+"ISO.Oman\nDHS.Oman"
+"ISO.UnitedArabEmirates\nDHS.UnitedArabEmirates"
+"ISO.Kyrgyzstan\nDHS.Kyrgyzstan"
+"ISO.HongKong\nDHS.HongKong"
+"ISO.Qatar\nDHS.Qatar"
+"ISO.LaoPeoplesDemocraticRepublic\nDHS.Laos"
+"ISO.Georgia\nDHS.Georgia"
+"ISO.Malaysia\nDHS.Malaysia"
+"ISO.Maldives\nDHS.Maldives"
+"ISO.Indonesia\nDHS.Indonesia"
+"ISO.Macao\nDHS.Macau"
+"ISO.KoreaDemocraticPeoplesRepublicof\nDHS.NorthKorea"
+"ISO.Kuwait\nDHS.Kuwait"
+"ISO.Turkmenistan\nDHS.Turkmenistan"
+"ISO.India\nDHS.India"
+"ISO.Singapore\nDHS.Singapore"
+"ISO.Iraq\nDHS.Iraq"
+"ISO.Turkey\nDHS.Turkey"
+"ISO.Bangladesh\nDHS.Bangladesh"
+"ISO.SaudiArabia\nDHS.SaudiArabia"
+"ISO.Pakistan\nDHS.Pakistan"
+"ISO.Mongolia\nDHS.Mongolia"
+"ISO.SriLanka\nDHS.SriLanka"
+"ISO.Yemen\nDHS.Yemen"
+"ISO.Bhutan\nDHS.Bhutan"
+"ISO.Tajikistan\nDHS.Tajikistan"
+"ISO.Thailand\nDHS.Thailand"
+node[shape=note style=filled fillcolor="#FFFFCC" fontname="helvetica"] 
+"DHS.China"
+"DHS.Taiwan"
+edge[arrowhead=normal style=dotted color="#000000" constraint=true penwidth=1]
+edge[arrowhead=normal style=solid color="#000000" constraint=true penwidth=1]
+"ISO.KoreaRepublicof\nDHS.SouthKorea" -> "ISO.Asia\nDHS.Asia"
+"ISO.TimorLeste\nDHS.EastTimor" -> "ISO.Asia\nDHS.Asia"
+"ISO.Jordan\nDHS.Jordan" -> "ISO.Asia\nDHS.Asia"
+"ISO.Macao\nDHS.Macau" -> "ISO.China"
+"ISO.Iraq\nDHS.Iraq" -> "ISO.Asia\nDHS.Asia"
+"ISO.LaoPeoplesDemocraticRepublic\nDHS.Laos" -> "ISO.Asia\nDHS.Asia"
+"ISO.Japan\nDHS.Japan" -> "ISO.Asia\nDHS.Asia"
+"ISO.Oman\nDHS.Oman" -> "ISO.Asia\nDHS.Asia"
+"ISO.India\nDHS.India" -> "ISO.Asia\nDHS.Asia"
+"ISO.Azerbaijan\nDHS.Azerbaijan" -> "ISO.Asia\nDHS.Asia"
+"ISO.Uzbekistan\nDHS.Uzbekistan" -> "ISO.Asia\nDHS.Asia"
+"ISO.IranIslamicRepublicof\nDHS.Iran" -> "ISO.Asia\nDHS.Asia"
+"ISO.Bahrain\nDHS.Bahrain" -> "ISO.Asia\nDHS.Asia"
+"ISO.Bangladesh\nDHS.Bangladesh" -> "ISO.Asia\nDHS.Asia"
+"ISO.BruneiDarussalam\nDHS.Brunei" -> "ISO.Asia\nDHS.Asia"
+"ISO.Israel\nDHS.Israel" -> "ISO.Asia\nDHS.Asia"
+"ISO.TaiwanProvinceofChina" -> "ISO.China"
+"ISO.SaudiArabia\nDHS.SaudiArabia" -> "ISO.Asia\nDHS.Asia"
+"ISO.Kuwait\nDHS.Kuwait" -> "ISO.Asia\nDHS.Asia"
+"ISO.Philippines\nDHS.Philippines" -> "ISO.Asia\nDHS.Asia"
+"ISO.Tajikistan\nDHS.Tajikistan" -> "ISO.Asia\nDHS.Asia"
+"ISO.Myanmar\nDHS.Burma" -> "ISO.Asia\nDHS.Asia"
+"ISO.HongKong\nDHS.HongKong" -> "ISO.China"
+"ISO.Pakistan\nDHS.Pakistan" -> "ISO.Asia\nDHS.Asia"
+"ISO.Qatar\nDHS.Qatar" -> "ISO.Asia\nDHS.Asia"
+"ISO.Mongolia\nDHS.Mongolia" -> "ISO.Asia\nDHS.Asia"
+"ISO.Turkey\nDHS.Turkey" -> "ISO.Asia\nDHS.Asia"
+"ISO.Turkmenistan\nDHS.Turkmenistan" -> "ISO.Asia\nDHS.Asia"
+"ISO.Singapore\nDHS.Singapore" -> "ISO.Asia\nDHS.Asia"
+"ISO.KoreaDemocraticPeoplesRepublicof\nDHS.NorthKorea" -> "ISO.Asia\nDHS.Asia"
+"ISO.SriLanka\nDHS.SriLanka" -> "ISO.Asia\nDHS.Asia"
+"ISO.Thailand\nDHS.Thailand" -> "ISO.Asia\nDHS.Asia"
+"ISO.Cambodia\nDHS.Cambodia" -> "ISO.Asia\nDHS.Asia"
+"ISO.China" -> "ISO.Asia\nDHS.Asia"
+"ISO.Georgia\nDHS.Georgia" -> "ISO.Asia\nDHS.Asia"
+"ISO.Cyprus\nDHS.Cyprus" -> "ISO.Asia\nDHS.Asia"
+"ISO.Armenia\nDHS.Armenia" -> "ISO.Asia\nDHS.Asia"
+"ISO.Malaysia\nDHS.Malaysia" -> "ISO.Asia\nDHS.Asia"
+"ISO.UnitedArabEmirates\nDHS.UnitedArabEmirates" -> "ISO.Asia\nDHS.Asia"
+"ISO.VietNam\nDHS.Vietnam" -> "ISO.Asia\nDHS.Asia"
+"ISO.Yemen\nDHS.Yemen" -> "ISO.Asia\nDHS.Asia"
+"ISO.Nepal\nDHS.Nepal" -> "ISO.Asia\nDHS.Asia"
+"ISO.Bhutan\nDHS.Bhutan" -> "ISO.Asia\nDHS.Asia"
+"ISO.Lebanon\nDHS.Lebanon" -> "ISO.Asia\nDHS.Asia"
+"ISO.Afghanistan\nDHS.Afghanistan" -> "ISO.Asia\nDHS.Asia"
+"ISO.Indonesia\nDHS.Indonesia" -> "ISO.Asia\nDHS.Asia"
+"ISO.Maldives\nDHS.Maldives" -> "ISO.Asia\nDHS.Asia"
+"ISO.KazakDHStan\nDHS.KazakDHStan" -> "ISO.Asia\nDHS.Asia"
+"ISO.Kyrgyzstan\nDHS.Kyrgyzstan" -> "ISO.Asia\nDHS.Asia"
+edge[arrowhead=normal style=solid color="#FF0000" constraint=true penwidth=1]
+"DHS.China" -> "ISO.TaiwanProvinceofChina"
+"DHS.Taiwan" -> "ISO.TaiwanProvinceofChina"
+node[shape=box] 
+{rank=source Legend [fillcolor= white margin=0 label=< 
+ <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4"> 
+<TR> <TD COLSPAN="2"><font face="Arial Black"> Nodes</font></TD> </TR> 
+<TR> 
+ <TD bgcolor="#CCFFCC" fontname="helvetica">ISO</TD> 
+ <TD>2</TD> 
+ </TR> 
+<TR> 
+ <TD bgcolor="#EEEEEE" fontname="helvetica">congruent</TD> 
+ <TD>48</TD> 
+ </TR> 
+<TR> 
+ <TD bgcolor="#FFFFCC" fontname="helvetica">DHS</TD> 
+ <TD>2</TD> 
+ </TR> 
+<TR> <TD COLSPAN="2"><font face = "Arial Black"> Edges </font></TD> </TR> 
+<TR> 
+ <TD><font color ="#000000">is_a (input)</font></TD><TD>49</TD>
+</TR>
+<TR> 
+ <TD><font color ="#FF0000">is_a (inferred)</font></TD><TD>2</TD>
+</TR>
+</TABLE> 
+ >] } 
+}

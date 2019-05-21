@@ -1,0 +1,283 @@
+digraph{
+rankdir=LR
+node[shape=circle style=filled fillcolor="#FFFFFF"] 
+node[shape=note style=filled fillcolor="#FFFFCC" fontname="helvetica"] 
+"DHS.Mongolia"
+"DHS.Maldives"
+"DHS.Thailand"
+"DHS.HongKong"
+"DHS.Cambodia"
+"DHS.Yemen"
+"DHS.Asia"
+"DHS.Jordan"
+"DHS.Tajikistan"
+"DHS.Israel"
+"DHS.NorthKorea"
+"DHS.Brunei"
+"DHS.Bahrain"
+"DHS.Macau"
+"DHS.Cyprus"
+"DHS.China"
+"DHS.Malaysia"
+"DHS.Oman"
+"DHS.Turkey"
+"DHS.Turkmenistan"
+"DHS.Georgia"
+"DHS.Kuwait"
+"DHS.KazakDHStan"
+"DHS.Philippines"
+"DHS.Taiwan"
+"DHS.Singapore"
+"DHS.Uzbekistan"
+"DHS.Burma"
+"DHS.SriLanka"
+"DHS.Qatar"
+"DHS.Lebanon"
+"DHS.SaudiArabia"
+"DHS.Bangladesh"
+"DHS.Bhutan"
+"DHS.Laos"
+"DHS.Pakistan"
+"DHS.UnitedArabEmirates"
+"DHS.SouthKorea"
+"DHS.Indonesia"
+"DHS.Afghanistan"
+"DHS.Iraq"
+"DHS.Kyrgyzstan"
+"DHS.Iran"
+"DHS.Armenia"
+"DHS.Japan"
+"DHS.India"
+"DHS.Nepal"
+"DHS.Vietnam"
+"DHS.Azerbaijan"
+"DHS.EastTimor"
+node[shape=circle style=filled fillcolor="#FFFFFF"] 
+node[shape=box style=filled fillcolor="#CCFFCC" fontname="helvetica"] 
+"ISO.Israel"
+"ISO.Philippines"
+"ISO.Indonesia"
+"ISO.China"
+"ISO.TimorLeste"
+"ISO.Afghanistan"
+"ISO.Turkmenistan"
+"ISO.KoreaDemocraticPeoplesRepublicof"
+"ISO.Yemen"
+"ISO.BruneiDarussalam"
+"ISO.Malaysia"
+"ISO.Cyprus"
+"ISO.Bhutan"
+"ISO.Nepal"
+"ISO.TaiwanProvinceofChina"
+"ISO.Uzbekistan"
+"ISO.SriLanka"
+"ISO.Lebanon"
+"ISO.Bangladesh"
+"ISO.Macao"
+"ISO.Mongolia"
+"ISO.Georgia"
+"ISO.Oman"
+"ISO.Bahrain"
+"ISO.Armenia"
+"ISO.Thailand"
+"ISO.Singapore"
+"ISO.Iraq"
+"ISO.Kyrgyzstan"
+"ISO.Japan"
+"ISO.Asia"
+"ISO.Turkey"
+"ISO.KoreaRepublicof"
+"ISO.India"
+"ISO.Tajikistan"
+"ISO.HongKong"
+"ISO.UnitedArabEmirates"
+"ISO.LaoPeoplesDemocraticRepublic"
+"ISO.Azerbaijan"
+"ISO.Maldives"
+"ISO.KazakDHStan"
+"ISO.IranIslamicRepublicof"
+"ISO.Cambodia"
+"ISO.Kuwait"
+"ISO.Jordan"
+"ISO.Myanmar"
+"ISO.SaudiArabia"
+"ISO.VietNam"
+"ISO.Qatar"
+"ISO.Pakistan"
+edge[style=solid color="#000000" constraint=true penwidth=1 dir=forward]
+edge[style=solid color="#000000" constraint=true penwidth=1 dir=forward]
+"DHS.Pakistan" -> "DHS.Asia"
+"DHS.UnitedArabEmirates" -> "DHS.Asia"
+"DHS.Malaysia" -> "DHS.Asia"
+"DHS.Mongolia" -> "DHS.Asia"
+"DHS.Iraq" -> "DHS.Asia"
+"DHS.Turkey" -> "DHS.Asia"
+"DHS.HongKong" -> "DHS.Asia"
+"DHS.Laos" -> "DHS.Asia"
+"DHS.SaudiArabia" -> "DHS.Asia"
+"DHS.Tajikistan" -> "DHS.Asia"
+"DHS.Jordan" -> "DHS.Asia"
+"DHS.Bangladesh" -> "DHS.Asia"
+"DHS.China" -> "DHS.Asia"
+"DHS.Taiwan" -> "DHS.Asia"
+"DHS.Bhutan" -> "DHS.Asia"
+"DHS.SouthKorea" -> "DHS.Asia"
+"DHS.Burma" -> "DHS.Asia"
+"DHS.SriLanka" -> "DHS.Asia"
+"DHS.Israel" -> "DHS.Asia"
+"DHS.Maldives" -> "DHS.Asia"
+"DHS.Thailand" -> "DHS.Asia"
+"DHS.Cambodia" -> "DHS.Asia"
+"DHS.Philippines" -> "DHS.Asia"
+"DHS.Afghanistan" -> "DHS.Asia"
+"DHS.Uzbekistan" -> "DHS.Asia"
+"DHS.KazakDHStan" -> "DHS.Asia"
+"DHS.EastTimor" -> "DHS.Asia"
+"DHS.Armenia" -> "DHS.Asia"
+"DHS.Indonesia" -> "DHS.Asia"
+"DHS.Singapore" -> "DHS.Asia"
+"DHS.Lebanon" -> "DHS.Asia"
+"DHS.Yemen" -> "DHS.Asia"
+"DHS.Oman" -> "DHS.Asia"
+"DHS.Brunei" -> "DHS.Asia"
+"DHS.Japan" -> "DHS.Asia"
+"DHS.Azerbaijan" -> "DHS.Asia"
+"DHS.Nepal" -> "DHS.Asia"
+"DHS.Turkmenistan" -> "DHS.Asia"
+"DHS.Iran" -> "DHS.Asia"
+"DHS.Kyrgyzstan" -> "DHS.Asia"
+"DHS.Kuwait" -> "DHS.Asia"
+"DHS.Vietnam" -> "DHS.Asia"
+"DHS.India" -> "DHS.Asia"
+"DHS.Georgia" -> "DHS.Asia"
+"DHS.Macau" -> "DHS.Asia"
+"DHS.Bahrain" -> "DHS.Asia"
+"DHS.NorthKorea" -> "DHS.Asia"
+"DHS.Cyprus" -> "DHS.Asia"
+"DHS.Qatar" -> "DHS.Asia"
+edge[style=solid color="#000000" constraint=true penwidth=1 dir=forward]
+edge[style=solid color="#000000" constraint=true penwidth=1 dir=forward]
+"ISO.Asia" -> "ISO.BruneiDarussalam" [dir=back]
+"ISO.Asia" -> "ISO.Cyprus" [dir=back]
+"ISO.Asia" -> "ISO.TimorLeste" [dir=back]
+"ISO.Asia" -> "ISO.Bhutan" [dir=back]
+"ISO.Asia" -> "ISO.Nepal" [dir=back]
+"ISO.Asia" -> "ISO.Japan" [dir=back]
+"ISO.Asia" -> "ISO.Tajikistan" [dir=back]
+"ISO.Asia" -> "ISO.Malaysia" [dir=back]
+"ISO.Asia" -> "ISO.KazakDHStan" [dir=back]
+"ISO.Asia" -> "ISO.Oman" [dir=back]
+"ISO.Asia" -> "ISO.SaudiArabia" [dir=back]
+"ISO.Asia" -> "ISO.China" [dir=back]
+"ISO.China" -> "ISO.Macao" [dir=back]
+"ISO.Asia" -> "ISO.VietNam" [dir=back]
+"ISO.Asia" -> "ISO.Myanmar" [dir=back]
+"ISO.Asia" -> "ISO.Qatar" [dir=back]
+"ISO.Asia" -> "ISO.Indonesia" [dir=back]
+"ISO.Asia" -> "ISO.Singapore" [dir=back]
+"ISO.Asia" -> "ISO.Uzbekistan" [dir=back]
+"ISO.Asia" -> "ISO.Yemen" [dir=back]
+"ISO.Asia" -> "ISO.India" [dir=back]
+"ISO.Asia" -> "ISO.Lebanon" [dir=back]
+"ISO.Asia" -> "ISO.KoreaDemocraticPeoplesRepublicof" [dir=back]
+"ISO.Asia" -> "ISO.Afghanistan" [dir=back]
+"ISO.Asia" -> "ISO.Jordan" [dir=back]
+"ISO.Asia" -> "ISO.Kuwait" [dir=back]
+"ISO.Asia" -> "ISO.LaoPeoplesDemocraticRepublic" [dir=back]
+"ISO.Asia" -> "ISO.SriLanka" [dir=back]
+"ISO.Asia" -> "ISO.KoreaRepublicof" [dir=back]
+"ISO.China" -> "ISO.HongKong" [dir=back]
+"ISO.Asia" -> "ISO.Iraq" [dir=back]
+"ISO.Asia" -> "ISO.Turkey" [dir=back]
+"ISO.China" -> "ISO.TaiwanProvinceofChina" [dir=back]
+"ISO.Asia" -> "ISO.Cambodia" [dir=back]
+"ISO.Asia" -> "ISO.IranIslamicRepublicof" [dir=back]
+"ISO.Asia" -> "ISO.Pakistan" [dir=back]
+"ISO.Asia" -> "ISO.Bahrain" [dir=back]
+"ISO.Asia" -> "ISO.Armenia" [dir=back]
+"ISO.Asia" -> "ISO.Mongolia" [dir=back]
+"ISO.Asia" -> "ISO.Maldives" [dir=back]
+"ISO.Asia" -> "ISO.Bangladesh" [dir=back]
+"ISO.Asia" -> "ISO.Thailand" [dir=back]
+"ISO.Asia" -> "ISO.Kyrgyzstan" [dir=back]
+"ISO.Asia" -> "ISO.UnitedArabEmirates" [dir=back]
+"ISO.Asia" -> "ISO.Israel" [dir=back]
+"ISO.Asia" -> "ISO.Philippines" [dir=back]
+"ISO.Asia" -> "ISO.Azerbaijan" [dir=back]
+"ISO.Asia" -> "ISO.Turkmenistan" [dir=back]
+"ISO.Asia" -> "ISO.Georgia" [dir=back]
+edge[style=solid color="#000000" constraint=true penwidth=1 dir=forward]
+edge[style=dashed color="#AA00FF" constraint=true penwidth=2 dir=both]
+"ISO.Macao" -> "DHS.Macau" [label="="]
+"ISO.Afghanistan" -> "DHS.Afghanistan" [label="="]
+"ISO.LaoPeoplesDemocraticRepublic" -> "DHS.Laos" [label="="]
+"ISO.Mongolia" -> "DHS.Mongolia" [label="="]
+"ISO.KazakDHStan" -> "DHS.KazakDHStan" [label="="]
+"ISO.Maldives" -> "DHS.Maldives" [label="="]
+"ISO.TimorLeste" -> "DHS.EastTimor" [label="="]
+"ISO.IranIslamicRepublicof" -> "DHS.Iran" [label="="]
+"ISO.Philippines" -> "DHS.Philippines" [label="="]
+"ISO.Turkey" -> "DHS.Turkey" [label="="]
+"ISO.Tajikistan" -> "DHS.Tajikistan" [label="="]
+"ISO.Japan" -> "DHS.Japan" [label="="]
+"ISO.Malaysia" -> "DHS.Malaysia" [label="="]
+"ISO.Indonesia" -> "DHS.Indonesia" [label="="]
+"ISO.India" -> "DHS.India" [label="="]
+"ISO.Kyrgyzstan" -> "DHS.Kyrgyzstan" [label="="]
+"ISO.HongKong" -> "DHS.HongKong" [label="="]
+"ISO.Georgia" -> "DHS.Georgia" [label="="]
+"ISO.Uzbekistan" -> "DHS.Uzbekistan" [label="="]
+"ISO.Azerbaijan" -> "DHS.Azerbaijan" [label="="]
+"ISO.Thailand" -> "DHS.Thailand" [label="="]
+"ISO.Jordan" -> "DHS.Jordan" [label="="]
+"ISO.VietNam" -> "DHS.Vietnam" [label="="]
+"ISO.Bahrain" -> "DHS.Bahrain" [label="="]
+"ISO.Asia" -> "DHS.Asia" [label="="]
+"ISO.Qatar" -> "DHS.Qatar" [label="="]
+"ISO.Bangladesh" -> "DHS.Bangladesh" [label="="]
+"ISO.SaudiArabia" -> "DHS.SaudiArabia" [label="="]
+"ISO.Armenia" -> "DHS.Armenia" [label="="]
+"ISO.Myanmar" -> "DHS.Burma" [label="="]
+"ISO.Yemen" -> "DHS.Yemen" [label="="]
+"ISO.Singapore" -> "DHS.Singapore" [label="="]
+"ISO.Kuwait" -> "DHS.Kuwait" [label="="]
+"ISO.Turkmenistan" -> "DHS.Turkmenistan" [label="="]
+"ISO.BruneiDarussalam" -> "DHS.Brunei" [label="="]
+"ISO.Pakistan" -> "DHS.Pakistan" [label="="]
+"ISO.Iraq" -> "DHS.Iraq" [label="="]
+"ISO.Nepal" -> "DHS.Nepal" [label="="]
+"ISO.Lebanon" -> "DHS.Lebanon" [label="="]
+"ISO.SriLanka" -> "DHS.SriLanka" [label="="]
+"ISO.Oman" -> "DHS.Oman" [label="="]
+"ISO.Cyprus" -> "DHS.Cyprus" [label="="]
+"ISO.Israel" -> "DHS.Israel" [label="="]
+"ISO.UnitedArabEmirates" -> "DHS.UnitedArabEmirates" [label="="]
+"ISO.Cambodia" -> "DHS.Cambodia" [label="="]
+"ISO.KoreaRepublicof" -> "DHS.SouthKorea" [label="="]
+"ISO.KoreaDemocraticPeoplesRepublicof" -> "DHS.NorthKorea" [label="="]
+"ISO.Bhutan" -> "DHS.Bhutan" [label="="]
+node[shape=box] 
+{rank=source Legend [fillcolor= white margin=0 label=< 
+ <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4"> 
+<TR> <TD COLSPAN="2"><font face="Arial Black"> Nodes</font></TD> </TR> 
+<TR> 
+ <TD bgcolor="#FFFFCC" fontname="helvetica">DHS</TD> 
+ <TD>50</TD> 
+ </TR> 
+<TR> 
+ <TD bgcolor="#CCFFCC" fontname="helvetica">ISO</TD> 
+ <TD>50</TD> 
+ </TR> 
+<TR> <TD COLSPAN="2"><font face = "Arial Black"> Edges </font></TD> </TR> 
+<TR> 
+ <TD><font color ="#000000">is_a (DHS)</font></TD><TD>49</TD>
+</TR>
+<TR> 
+ <TD><font color ="#000000">is_a (ISO)</font></TD><TD>49</TD>
+</TR>
+<TR> 
+ <TD><font color ="#AA00FF">articulations</font></TD><TD>48</TD>
+</TR>
+</TABLE> 
+ >] } 
+}

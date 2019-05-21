@@ -1,0 +1,128 @@
+DHS.Asia:
+  concept: Asia
+  group: DHS
+DHS.AsiaOther:
+  concept: AsiaOther
+  group: DHS
+DHS.China:
+  concept: China
+  group: DHS
+DHS.ChinaOther:
+  concept: ChinaOther
+  group: DHS
+DHS.HongKong:
+  concept: HongKong
+  group: DHS
+DHS.Macau:
+  concept: Macau
+  group: DHS
+DHS.Taiwan:
+  concept: Taiwan
+  group: DHS
+DHS.Vietnam:
+  concept: Vietnam
+  group: DHS
+ISO.Asia:
+  concept: Asia
+  group: ISO
+ISO.AsiaOther:
+  concept: AsiaOther
+  group: ISO
+ISO.China:
+  concept: China
+  group: ISO
+ISO.ChinaOther:
+  concept: ChinaOther
+  group: ISO
+ISO.HongKong:
+  concept: HongKong
+  group: ISO
+ISO.Macao:
+  concept: Macao
+  group: ISO
+ISO.Taiwan:
+  concept: Taiwan
+  group: ISO
+ISO.VietNam:
+  concept: VietNam
+  group: ISO
+DHS.AsiaOther_DHS.Asia:
+  label: isa
+  s: DHS.AsiaOther
+  t: DHS.Asia
+DHS.ChinaOther_DHS.Asia:
+  label: isa
+  s: DHS.ChinaOther
+  t: DHS.Asia
+DHS.China_DHS.Asia:
+  label: isa
+  s: DHS.China
+  t: DHS.Asia
+DHS.HongKong_DHS.Asia:
+  label: isa
+  s: DHS.HongKong
+  t: DHS.Asia
+DHS.Macau_DHS.Asia:
+  label: isa
+  s: DHS.Macau
+  t: DHS.Asia
+DHS.Taiwan_DHS.Asia:
+  label: isa
+  s: DHS.Taiwan
+  t: DHS.Asia
+DHS.Vietnam_DHS.Asia:
+  label: isa
+  s: DHS.Vietnam
+  t: DHS.Asia
+ISO.AsiaOther_DHS.AsiaOther:
+  label: '='
+  s: ISO.AsiaOther
+  t: DHS.AsiaOther
+ISO.AsiaOther_ISO.Asia:
+  label: isa
+  s: ISO.AsiaOther
+  t: ISO.Asia
+ISO.Asia_DHS.Asia:
+  label: '='
+  s: ISO.Asia
+  t: DHS.Asia
+ISO.ChinaOther_DHS.ChinaOther:
+  label: '='
+  s: ISO.ChinaOther
+  t: DHS.ChinaOther
+ISO.ChinaOther_ISO.China:
+  label: isa
+  s: ISO.ChinaOther
+  t: ISO.China
+ISO.China_ISO.Asia:
+  label: isa
+  s: ISO.China
+  t: ISO.Asia
+ISO.HongKong_DHS.HongKong:
+  label: '='
+  s: ISO.HongKong
+  t: DHS.HongKong
+ISO.HongKong_ISO.China:
+  label: isa
+  s: ISO.HongKong
+  t: ISO.China
+ISO.Macao_DHS.Macau:
+  label: '='
+  s: ISO.Macao
+  t: DHS.Macau
+ISO.Macao_ISO.China:
+  label: isa
+  s: ISO.Macao
+  t: ISO.China
+ISO.Taiwan_ISO.China:
+  label: isa
+  s: ISO.Taiwan
+  t: ISO.China
+ISO.VietNam_DHS.Vietnam:
+  label: '='
+  s: ISO.VietNam
+  t: DHS.Vietnam
+ISO.VietNam_ISO.Asia:
+  label: isa
+  s: ISO.VietNam
+  t: ISO.Asia

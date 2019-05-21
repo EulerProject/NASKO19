@@ -1,0 +1,66 @@
+DHS.China:
+  concept: China
+  group: DHS
+DHS.Taiwan:
+  concept: Taiwan
+  group: DHS
+ISO.China:
+  concept: China
+  group: ISO
+ISO.Taiwan:
+  concept: Taiwan
+  group: ISO
+congruent.ISO.AsiaOther\nDHS.AsiaOther:
+  concept: ISO.AsiaOther\nDHS.AsiaOther
+  group: congruent
+congruent.ISO.Asia\nDHS.Asia:
+  concept: ISO.Asia\nDHS.Asia
+  group: congruent
+congruent.ISO.ChinaOther\nDHS.ChinaOther:
+  concept: ISO.ChinaOther\nDHS.ChinaOther
+  group: congruent
+congruent.ISO.HongKong\nDHS.HongKong:
+  concept: ISO.HongKong\nDHS.HongKong
+  group: congruent
+congruent.ISO.Macao\nDHS.Macau:
+  concept: ISO.Macao\nDHS.Macau
+  group: congruent
+congruent.ISO.VietNam\nDHS.Vietnam:
+  concept: ISO.VietNam\nDHS.Vietnam
+  group: congruent
+DHS.China_ISO.Taiwan:
+  label: is_a (inferred)
+  s: DHS.China
+  t: ISO.Taiwan
+DHS.Taiwan_ISO.Taiwan:
+  label: is_a (inferred)
+  s: DHS.Taiwan
+  t: ISO.Taiwan
+ISO.AsiaOther\nDHS.AsiaOther_ISO.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: ISO.AsiaOther\nDHS.AsiaOther
+  t: ISO.Asia\nDHS.Asia
+ISO.ChinaOther\nDHS.ChinaOther_ISO.China:
+  label: is_a (input)
+  s: ISO.ChinaOther\nDHS.ChinaOther
+  t: ISO.China
+ISO.China_ISO.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: ISO.China
+  t: ISO.Asia\nDHS.Asia
+ISO.HongKong\nDHS.HongKong_ISO.China:
+  label: is_a (input)
+  s: ISO.HongKong\nDHS.HongKong
+  t: ISO.China
+ISO.Macao\nDHS.Macau_ISO.China:
+  label: is_a (input)
+  s: ISO.Macao\nDHS.Macau
+  t: ISO.China
+ISO.Taiwan_ISO.China:
+  label: is_a (input)
+  s: ISO.Taiwan
+  t: ISO.China
+ISO.VietNam\nDHS.Vietnam_ISO.Asia\nDHS.Asia:
+  label: is_a (input)
+  s: ISO.VietNam\nDHS.Vietnam
+  t: ISO.Asia\nDHS.Asia

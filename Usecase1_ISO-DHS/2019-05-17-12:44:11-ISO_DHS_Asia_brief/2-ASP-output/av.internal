@@ -1,0 +1,11 @@
+firstTName = 'ISO'
+secondTName = 'DHS'
+thirdTName = ''
+fourthTName = ''
+fifthTName = ''
+allRcgEdgesDict = {}
+numOfPws = 1
+avFlag = False
+allRcgNodesDict = {'ISO.Taiwan': {'concept': 'Taiwan', 'group': 'ISO'}, 'congruent.ISO.VietNam\\nDHS.Vietnam': {'concept': 'ISO.VietNam\\nDHS.Vietnam', 'group': 'congruent'}, 'congruent.ISO.AsiaOther\\nDHS.AsiaOther': {'concept': 'ISO.AsiaOther\\nDHS.AsiaOther', 'group': 'congruent'}, 'ISO.China': {'concept': 'China', 'group': 'ISO'}, 'congruent.ISO.Macao\\nDHS.Macau': {'concept': 'ISO.Macao\\nDHS.Macau', 'group': 'congruent'}, 'DHS.China': {'concept': 'China', 'group': 'DHS'}, 'congruent.ISO.ChinaOther\\nDHS.ChinaOther': {'concept': 'ISO.ChinaOther\\nDHS.ChinaOther', 'group': 'congruent'}, 'congruent.ISO.HongKong\\nDHS.HongKong': {'concept': 'ISO.HongKong\\nDHS.HongKong', 'group': 'congruent'}, 'DHS.Taiwan': {'concept': 'Taiwan', 'group': 'DHS'}, 'congruent.ISO.Asia\\nDHS.Asia': {'concept': 'ISO.Asia\\nDHS.Asia', 'group': 'congruent'}}
+trlist = [['ISO.Taiwan', 'ISO.China', 0], ['DHS.China', 'ISO.Taiwan', 1], ['DHS.Taiwan', 'ISO.Taiwan', 1], ['ISO.Macao\\nDHS.Macau', 'ISO.China', 0], ['ISO.China', 'ISO.Asia\\nDHS.Asia', 0], ['ISO.AsiaOther\\nDHS.AsiaOther', 'ISO.Asia\\nDHS.Asia', 0], ['ISO.VietNam\\nDHS.Vietnam', 'ISO.Asia\\nDHS.Asia', 0], ['ISO.ChinaOther\\nDHS.ChinaOther', 'ISO.China', 0], ['ISO.HongKong\\nDHS.HongKong', 'ISO.China', 0], ['DHS.China', 'ISO.Asia\\nDHS.Asia', 2], ['DHS.Taiwan', 'ISO.Asia\\nDHS.Asia', 2], ['ISO.Macao\\nDHS.Macau', 'ISO.Asia\\nDHS.Asia', 2], ['ISO.ChinaOther\\nDHS.ChinaOther', 'ISO.Asia\\nDHS.Asia', 2], ['ISO.HongKong\\nDHS.HongKong', 'ISO.Asia\\nDHS.Asia', 2]]
+avFlag = True

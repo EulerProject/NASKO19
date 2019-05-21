@@ -1,0 +1,59 @@
+#Taxonomy 1 ISO 3166 with Regional Code from UN: https://github.com/lukes/ISO-3166-Countries-with-Regional-Codes
+#Taxonomy 2 Homeland Secuirty https://www.dhs.gov/geographic-regions
+
+taxonomy ISO ISO3166
+(Asia Afghanistan Armenia Azerbaijan Bahrain Bangladesh Bhutan BruneiDarussalam Cambodia China Cyprus Georgia India Indonesia IranIslamicRepublicof Iraq Israel Japan Jordan KazakDHStan KoreaDemocraticPeoplesRepublicof KoreaRepublicof Kuwait Kyrgyzstan LaoPeoplesDemocraticRepublic Lebanon Malaysia Maldives Mongolia Myanmar Nepal Oman Pakistan Philippines Qatar SaudiArabia Singapore SriLanka Tajikistan Thailand TimorLeste Turkey Turkmenistan UnitedArabEmirates Uzbekistan VietNam Yemen)
+(China TaiwanProvinceofChina HongKong Macao)
+
+taxonomy DHS HomelandSecurity
+(Asia Afghanistan Armenia Azerbaijan Bahrain Bangladesh Bhutan Brunei Burma Cambodia China Cyprus EastTimor Georgia HongKong India Indonesia Iran Iraq Israel Japan Jordan KazakDHStan Kuwait Kyrgyzstan Laos Lebanon Macau Malaysia Maldives Mongolia Nepal NorthKorea Oman Pakistan Philippines Qatar SaudiArabia Singapore SouthKorea SriLanka Taiwan Tajikistan Thailand Turkey Turkmenistan UnitedArabEmirates Uzbekistan Vietnam Yemen)
+
+articulation ISO-DHS ISO-Homeland
+[ISO.Asia equals DHS.Asia]
+[ISO.Afghanistan equals DHS.Afghanistan]
+[ISO.Armenia equals DHS.Armenia]
+[ISO.Azerbaijan equals DHS.Azerbaijan]
+[ISO.Bahrain equals DHS.Bahrain]
+[ISO.Bangladesh equals DHS.Bangladesh]
+[ISO.Bhutan equals DHS.Bhutan]
+[ISO.BruneiDarussalam equals DHS.Brunei]
+[ISO.Cambodia equals DHS.Cambodia]
+[ISO.Cyprus equals DHS.Cyprus]
+[ISO.Georgia equals DHS.Georgia]
+[ISO.HongKong equals DHS.HongKong]
+[ISO.India equals DHS.India]
+[ISO.Indonesia equals DHS.Indonesia]
+[ISO.IranIslamicRepublicof equals DHS.Iran]
+[ISO.Iraq equals DHS.Iraq]
+[ISO.Israel equals DHS.Israel]
+[ISO.Japan equals DHS.Japan]
+[ISO.Jordan equals DHS.Jordan]
+[ISO.KazakDHStan equals DHS.KazakDHStan]
+[ISO.KoreaDemocraticPeoplesRepublicof equals DHS.NorthKorea]
+[ISO.KoreaRepublicof equals DHS.SouthKorea]
+[ISO.Kuwait equals DHS.Kuwait]
+[ISO.Kyrgyzstan equals DHS.Kyrgyzstan]
+[ISO.LaoPeoplesDemocraticRepublic equals DHS.Laos]
+[ISO.Lebanon equals DHS.Lebanon]
+[ISO.Macao equals DHS.Macau]
+[ISO.Malaysia equals DHS.Malaysia]
+[ISO.Maldives equals DHS.Maldives]
+[ISO.Mongolia equals DHS.Mongolia]
+[ISO.Myanmar equals DHS.Burma]
+[ISO.Nepal equals DHS.Nepal]
+[ISO.Oman equals DHS.Oman]
+[ISO.Pakistan equals DHS.Pakistan]
+[ISO.Philippines equals DHS.Philippines]
+[ISO.Qatar equals DHS.Qatar]
+[ISO.SaudiArabia equals DHS.SaudiArabia]
+[ISO.Singapore equals DHS.Singapore]
+[ISO.SriLanka equals DHS.SriLanka]
+[ISO.Tajikistan equals DHS.Tajikistan]
+[ISO.Thailand equals DHS.Thailand]
+[ISO.TimorLeste equals DHS.EastTimor]
+[ISO.Turkey equals DHS.Turkey]
+[ISO.Turkmenistan equals DHS.Turkmenistan]
+[ISO.UnitedArabEmirates equals DHS.UnitedArabEmirates]
+[ISO.Uzbekistan equals DHS.Uzbekistan]
+[ISO.VietNam equals DHS.Vietnam]
+[ISO.Yemen equals DHS.Yemen]

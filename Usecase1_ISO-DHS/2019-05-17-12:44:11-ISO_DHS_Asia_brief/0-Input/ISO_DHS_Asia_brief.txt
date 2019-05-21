@@ -1,0 +1,17 @@
+#Taxonomy 1 ISO 3166 with Regional Code from UN: https://github.com/lukes/ISO-3166-Countries-with-Regional-Codes
+#Taxonomy 2 Homeland Secuirty https://www.dhs.gov/geographic-regions
+
+taxonomy ISO ISO3166
+(Asia China VietNam AsiaOther)
+(China HongKong Macao Taiwan ChinaOther)
+
+taxonomy DHS HomelandSecurity
+(Asia China ChinaOther HongKong Macau Taiwan Vietnam AsiaOther)
+
+articulation ISO-DHS ISO-Homeland
+[ISO.Asia equals DHS.Asia]
+[ISO.HongKong equals DHS.HongKong]
+[ISO.Macao equals DHS.Macau]
+[ISO.ChinaOther equals DHS.ChinaOther]
+[ISO.VietNam equals DHS.Vietnam]
+[ISO.AsiaOther equals DHS.AsiaOther]
