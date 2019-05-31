@@ -3,7 +3,7 @@ This is a repository about the use cases on geopolitical realities in taxonomies
 
 Title: Exploring Geopolitical Realities through Taxonomies: The Case of Taiwan
 
-Authors: Yi-Yun Cheng, Bertram Ludaescher
+Authors: Yi-Yun Cheng, Bertram Ludäscher
 
 
 
