@@ -18,6 +18,8 @@ In the face of heterogeneous standards and large-scale datasets, it has become i
 ## Replay use cases
 To replay the use cases you can use the EulerX toolkit. There are two versions of the available. Please refer to the README of either [euler2](https://github.com/rodenhausen/ASIST17/blob/master/euler2/README.md) or [LeanEuler](https://github.com/idaks/LeanEuler) for more information on how to run the use cases of the paper.
 
+## Links to relevant resources
+- [Paper fulltext](https://github.com/EulerProject/NASKO19/blob/master/NASKO_2019_final.pdf)
 
 ## Other information:
 [NASKO conference information](http://www.iskocus.org/nasko2019.php)
