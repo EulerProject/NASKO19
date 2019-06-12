@@ -20,6 +20,7 @@ To replay the use cases you can use the EulerX toolkit. There are two versions o
 
 ## Links to relevant resources
 - [Paper fulltext](https://github.com/EulerProject/NASKO19/blob/master/NASKO_2019_final.pdf)
+- [Presentation slides](https://github.com/EulerProject/NASKO19/blob/master/NASKO2019_slides.pdf)
 
 ## Other information:
 [NASKO conference information](http://www.iskocus.org/nasko2019.php)
