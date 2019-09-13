@@ -24,5 +24,7 @@ To replay the use cases you can use the EulerX toolkit. There are two versions o
 
 ## Other information:
 [NASKO conference information](http://www.iskocus.org/nasko2019.php)
+
 [NASKO2019 program schedule](http://www.iskocus.org/nasko2019-program.php)
+
 [NASKO2019 proceedings](https://journals.lib.washington.edu/index.php/nasko)
